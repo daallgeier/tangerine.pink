@@ -44,7 +44,7 @@ export default function Home() {
 						22d consulting
 					</Link>
 
-					<br />
+					
 					and I am working on{" "}
 					<Link
 						target="_blank"
