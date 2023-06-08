@@ -21,10 +21,10 @@ export default async function ProjectsPage() {
 	}, {} as Record<string, number>);
 
 	const featured = allProjects.find(
-		(project) => project.slug === "planetfall",
+		(project) => project.slug === "22dconsulting",
 	)!;
-	const top2 = allProjects.find((project) => project.slug === "highstorm")!;
-	const top3 = allProjects.find((project) => project.slug === "envshare")!;
+	const top2 = allProjects.find((project) => project.slug === "")!;
+	const top3 = allProjects.find((project) => project.slug === "")!;
 	const sorted = allProjects
 		.filter((p) => p.published)
 		.filter(
@@ -48,7 +48,7 @@ export default async function ProjectsPage() {
 						Projects
 					</h2>
 					<p className="mt-4 text-zinc-400">
-						Some of the projects are from work and some are on my own time.
+						My projects, investments, and partnerships are listed here.
 					</p>
 				</div>
 				<div className="w-full h-px bg-zinc-800" />
