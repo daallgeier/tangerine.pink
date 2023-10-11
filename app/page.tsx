@@ -41,19 +41,19 @@ export default function Home() {
 						href="https://22dconsulting.com"
 						className="underline duration-500 hover:text-zinc-300"
 					>
-						22d consulting{" "}
+						22d consulting
 					</Link>
 
 					
-					and I am working on{" "}
+					{" "}and I am working on{" "}
 					<Link
 						target="_blank"
 						href="https://dahoam.ventures"
 						className="underline duration-500 hover:text-zinc-300"
 					>
-						dahoam ventures{" "}
+						dahoam ventures
 					</Link>{" "}
-					at night.
+					{" "}at night.
 				</h2>
 			</div>
 		</div>
