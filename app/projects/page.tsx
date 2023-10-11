@@ -22,7 +22,7 @@ export default async function ProjectsPage() {
 	}, {} as Record<string, number>);
 
 
-	const featured = allProjects.find((project) => project.slug === "unkey")!;
+	const featured = allProjects.find((project) => project.slug === "22dconsulting")!;
 	const top2 = allProjects.find((project) => project.slug === "planetfall")!;
 	const top3 = allProjects.find((project) => project.slug === "highstorm")!;
 	const sorted = allProjects
