@@ -45,7 +45,7 @@ export default function Home() {
 					</Link>
 
 					
-					and I am working on{" "}
+					{" "}and I am working on{" "}
 					<Link
 						target="_blank"
 						href="https://dahoam.ventures"
@@ -53,7 +53,7 @@ export default function Home() {
 					>
 						dahoam ventures
 					</Link>{" "}
-					at night.
+					{" "}at night.
 				</h2>
 			</div>
 		</div>
