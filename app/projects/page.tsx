@@ -6,6 +6,7 @@ import { Card } from "../components/card";
 import { Article } from "./article";
 import { Redis } from "@upstash/redis";
 import { Eye } from "lucide-react";
+import { Suspense } from 'react'
 
 const redis = Redis.fromEnv();
 
@@ -20,16 +21,15 @@ export default async function ProjectsPage() {
 		return acc;
 	}, {} as Record<string, number>);
 
-	const featured = allProjects.find((project) => project.slug === "unkey")!;
-	const top2 = allProjects.find((project) => project.slug === "planetfall")!;
-	const top3 = allProjects.find((project) => project.slug === "highstorm")!;
+
+	const featured = allProjects.find((project) => project.slug === "22dconsulting")!;
+	const top2 = allProjects.find((project) => project.slug === "tangerines-youtube")!;
+	const top3 = allProjects.find((project) => project.slug === "hermine")!;
 	const sorted = allProjects
 		.filter((p) => p.published)
 		.filter(
 			(project) =>
-				project.slug !== featured.slug &&
-				project.slug !== top2.slug &&
-				project.slug !== top3.slug,
+				project.slug !== featured.slug
 		)
 		.sort(
 			(a, b) =>
@@ -38,6 +38,7 @@ export default async function ProjectsPage() {
 		);
 
 	return (
+		<Suspense fallback={<p>Loading projects...</p>}>
 		<div className="relative pb-16">
 			<Navigation />
 			<div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
@@ -46,7 +47,7 @@ export default async function ProjectsPage() {
 						Projects
 					</h2>
 					<p className="mt-4 text-zinc-400">
-						Some of the projects are from work and some are on my own time.
+						My projects, investments, and partnerships are listed here.
 					</p>
 				</div>
 				<div className="w-full h-px bg-zinc-800" />
@@ -134,5 +135,6 @@ export default async function ProjectsPage() {
 				</div>
 			</div>
 		</div>
+		</Suspense>
 	);
 }
