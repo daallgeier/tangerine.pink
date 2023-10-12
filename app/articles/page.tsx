@@ -22,14 +22,14 @@ export default async function ArticlesPage() {
 	}, {} as Record<string, number>);
 
 
-	const featured = allArticles.find((project) => project.slug === "22dconsulting")!;
-	const top2 = allArticles.find((project) => project.slug === "tangerines-youtube")!;
-	const top3 = allArticles.find((project) => project.slug === "hermine")!;
+	const featured = allArticles.find((article) => article.slug === "22dconsulting")!;
+	const top2 = allArticles.find((article) => article.slug === "tangerines-youtube")!;
+	const top3 = allArticles.find((article) => article.slug === "hermine")!;
 	const sorted = allArticles
 		.filter((p) => p.published)
 		.filter(
-			(project) =>
-				project.slug !== featured.slug
+			(article) =>
+				article.slug !== featured.slug
 		)
 		.sort(
 			(a, b) =>
@@ -95,9 +95,9 @@ export default async function ArticlesPage() {
 					</Card>
 
 					<div className="flex flex-col w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
-						{[top2, top3].map((project) => (
-							<Card key={project.slug}>
-								<Article project={project} views={views[project.slug] ?? 0} />
+						{[top2, top3].map((articels) => (
+							<Card key={articels.slug}>
+								<Article articles={articles} views={views[articles.slug] ?? 0} />
 							</Card>
 						))}
 					</div>
@@ -108,27 +108,27 @@ export default async function ArticlesPage() {
 					<div className="grid grid-cols-1 gap-4">
 						{sorted
 							.filter((_, i) => i % 3 === 0)
-							.map((project) => (
-								<Card key={project.slug}>
-									<Article project={project} views={views[project.slug] ?? 0} />
+							.map((articles) => (
+								<Card key={articles.slug}>
+									<Article article={article} views={views[article.slug] ?? 0} />
 								</Card>
 							))}
 					</div>
 					<div className="grid grid-cols-1 gap-4">
 						{sorted
 							.filter((_, i) => i % 3 === 1)
-							.map((project) => (
-								<Card key={project.slug}>
-									<Article project={project} views={views[project.slug] ?? 0} />
+							.map((article) => (
+								<Card key={article.slug}>
+									<Article article={article} views={views[article.slug] ?? 0} />
 								</Card>
 							))}
 					</div>
 					<div className="grid grid-cols-1 gap-4">
 						{sorted
 							.filter((_, i) => i % 3 === 2)
-							.map((project) => (
-								<Card key={project.slug}>
-									<Article project={project} views={views[project.slug] ?? 0} />
+							.map((article) => (
+								<Card key={article.slug}>
+									<Article article={article} views={views[article.slug] ?? 0} />
 								</Card>
 							))}
 					</div>
