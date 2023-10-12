@@ -1,22 +1,22 @@
-import type { Project } from "@/.contentlayer/generated";
+import type { Article } from "@/.contentlayer/generated";
 import Link from "next/link";
 import { Eye, View } from "lucide-react";
 
 type Props = {
-	project: Project;
+	article: Article;
 	views: number;
 };
 
-export const Article: React.FC<Props> = ({ project, views }) => {
+export const Article: React.FC<Props> = ({ article, views }) => {
 	return (
-		<Link href={`/projects/${project.slug}`}>
+		<Link href={`/articles/${article.slug}`}>
 			<article className="p-4 md:p-8">
 				<div className="flex justify-between gap-2 items-center">
 					<span className="text-xs duration-1000 text-zinc-200 group-hover:text-white group-hover:border-zinc-200 drop-shadow-orange">
-						{project.date ? (
-							<time dateTime={new Date(project.date).toISOString()}>
+						{article.date ? (
+							<time dateTime={new Date(article.date).toISOString()}>
 								{Intl.DateTimeFormat(undefined, { dateStyle: "medium" }).format(
-									new Date(project.date),
+									new Date(article.date),
 								)}
 							</time>
 						) : (
@@ -29,10 +29,10 @@ export const Article: React.FC<Props> = ({ project, views }) => {
 					</span>
 				</div>
 				<h2 className="z-20 text-xl font-medium duration-1000 lg:text-3xl text-zinc-200 group-hover:text-white font-display">
-					{project.title}
+					{article.title}
 				</h2>
 				<p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-					{project.description}
+					{article.description}
 				</p>
 			</article>
 		</Link>
