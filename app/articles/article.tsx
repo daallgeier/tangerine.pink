@@ -1,13 +1,13 @@
-import type { Article } from "@/.contentlayer/generated";
+import type { Articles } from "@/.contentlayer/generated";
 import Link from "next/link";
 import { Eye, View } from "lucide-react";
 
 type Props = {
-	article: Article;
+	article: Articles;
 	views: number;
 };
 
-export const Article: React.FC<Props> = ({ article, views }) => {
+export const Project : React.FC<Props> = ({ article, views }) => {
 	return (
 		<Link href={`/articles/${article.slug}`}>
 			<article className="p-4 md:p-8">

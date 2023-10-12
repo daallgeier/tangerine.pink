@@ -3,7 +3,7 @@ import React from "react";
 import { allArticles } from "contentlayer/generated";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
-import { Article } from "./article";
+import { Articles } from "./article";
 import { Redis } from "@upstash/redis";
 import { Eye } from "lucide-react";
 import { Suspense } from 'react'
@@ -97,7 +97,7 @@ export default async function ArticlesPage() {
 					<div className="flex flex-col w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
 						{[top2, top3].map((articels) => (
 							<Card key={articels.slug}>
-								<Article articles={articles} views={views[articles.slug] ?? 0} />
+								<Articles articles={articels} views={views[articels.slug] ?? 0} />
 							</Card>
 						))}
 					</div>
@@ -110,7 +110,7 @@ export default async function ArticlesPage() {
 							.filter((_, i) => i % 3 === 0)
 							.map((articles) => (
 								<Card key={articles.slug}>
-									<Article article={article} views={views[article.slug] ?? 0} />
+									<Articles article={articles} views={views[articles.slug] ?? 0} />
 								</Card>
 							))}
 					</div>
@@ -119,7 +119,7 @@ export default async function ArticlesPage() {
 							.filter((_, i) => i % 3 === 1)
 							.map((article) => (
 								<Card key={article.slug}>
-									<Article article={article} views={views[article.slug] ?? 0} />
+									<Articles article={article} views={views[article.slug] ?? 0} />
 								</Card>
 							))}
 					</div>
@@ -128,7 +128,7 @@ export default async function ArticlesPage() {
 							.filter((_, i) => i % 3 === 2)
 							.map((article) => (
 								<Card key={article.slug}>
-									<Article article={article} views={views[article.slug] ?? 0} />
+									<Articles article={article} views={views[article.slug] ?? 0} />
 								</Card>
 							))}
 					</div>
