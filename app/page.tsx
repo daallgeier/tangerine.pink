@@ -63,7 +63,7 @@ export default function Home() {
 						className="underline duration-500 hover:text-zinc-300"
 					>
 						YouTube
-					</Link>{" "}!
+					</Link>!
 				</h2>
 			</div>
 		</div>
