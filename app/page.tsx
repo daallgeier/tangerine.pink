@@ -5,6 +5,7 @@ import Particles from "./components/particles";
 const navigation = [
 	{ name: "Projects", href: "/projects" },
 	{ name: "Contact", href: "/contact" },
+	{ name: "Adventures", href: "https://youtube.com/@daallgeier" },
 ];
 
 export default function Home() {
@@ -35,7 +36,7 @@ export default function Home() {
 			<div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
 			<div className="my-16 text-center animate-fade-in">
 				<h2 className="text-sm text-zinc-500 ">
-					Servus, I am Tangerine! I run {" "}
+					Servus, I am Tangerine! During the day I run {" "}
 					<Link
 						target="_blank"
 						href="https://22dconsulting.com"
@@ -44,7 +45,7 @@ export default function Home() {
 						22d consulting
 					</Link>
 
-					
+
 					{" "}and I am working on{" "}
 					<Link
 						target="_blank"
@@ -53,7 +54,9 @@ export default function Home() {
 					>
 						dahoam ventures
 					</Link>{" "}
-					{" "}at night.
+					{" "}at night.{" "}
+					<wbr/>
+					Follow my paragliding adventures on <a href="https://youtube.com/@daallgeier">YouTube</a>!
 				</h2>
 			</div>
 		</div>
