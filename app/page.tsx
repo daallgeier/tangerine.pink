@@ -56,7 +56,14 @@ export default function Home() {
 					</Link>{" "}
 					{" "}at night.{" "}
 					<wbr/>
-					Follow my paragliding adventures on <a href="https://youtube.com/@daallgeier">YouTube</a>!
+					Follow my paragliding adventures on{" "}
+					<Link
+						target="_blank"
+						href="https://youtube.com/@daallgeier"
+						className="underline duration-500 hover:text-zinc-300"
+					>
+						YouTube
+					</Link>{" "}!
 				</h2>
 			</div>
 		</div>
