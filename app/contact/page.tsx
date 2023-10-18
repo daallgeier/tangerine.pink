@@ -1,10 +1,28 @@
 "use client";
-import { Github, Mail, Twitter } from "lucide-react";
+import { Github, InstagramIcon, LinkedinIcon, Mail, Twitter, YoutubeIcon } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 
 const socials = [
+	{
+		icon: <YoutubeIcon size={20} />,
+		href: "https://youtube.com/@da_allgeier",
+		label: "YouTube",
+		handle: "@daallgeier",
+	},
+	{
+		icon: <InstagramIcon size={20} />,
+		href: "https://instagram.com/da_allgeier",
+		label: "Instagram",
+		handle: "@daallgeier",
+	},
+	{
+		icon: <LinkedinIcon size={20} />,
+		href: "https://linkedin.com/in/dominikkugelmann",
+		label: "LinkedIn",
+		handle: "@daallgeier",
+	},
 	{
 		icon: <Twitter size={20} />,
 		href: "https://twitter.com/da_allgeier",
@@ -15,7 +33,7 @@ const socials = [
 		icon: <Mail size={20} />,
 		href: "mailto:hi+web@tangerine.pink",
 		label: "Email",
-		handle: "hi+web@tangerine.pink",
+		handle: "hi@tangerine.pink",
 	},
 	{
 		icon: <Github size={20} />,
@@ -36,7 +54,7 @@ export default function Example() {
 							<Link
 								href={s.href}
 								target="_blank"
-								className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 md:py-24  lg:pb-48  md:p-16"
+								className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 md:  lg:  md:p-16"
 							>
 								<span
 									className="absolute w-px h-2/3 bg-gradient-to-b from-zinc-500 via-zinc-500/50 to-transparent"
