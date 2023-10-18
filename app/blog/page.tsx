@@ -14,18 +14,18 @@ export const revalidate = 60;
 export default async function BlogPage() {
 	const views = (
 		await redis.mget<number[]>(
-			...allBlog.map((p) => ["pageviews", "blog", p.slug].join(":")),
+			...allBlogs.map((p) => ["pageviews", "blog", p.slug].join(":")),
 		)
 	).reduce((acc, v, i) => {
-		acc[allBlog[i].slug] = v ?? 0;
+		acc[allBlogs[i].slug] = v ?? 0;
 		return acc;
 	}, {} as Record<string, number>);
 
 
-	const featured = allBlog.find((blog) => blog.slug === "22dconsulting")!;
-	const top2 = allBlog.find((blog) => blog.slug === "tangerines-youtube")!;
-	const top3 = allBlog.find((blog) => blog.slug === "hermine")!;
-	const sorted = allBlog
+	const featured = allBlogs.find((blog) => blog.slug === "22dconsulting")!;
+	const top2 = allBlogs.find((blog) => blog.slug === "tangerines-youtube")!;
+	const top3 = allBlogs.find((blog) => blog.slug === "hermine")!;
+	const sorted = allBlogs
 		.filter((p) => p.published)
 		.filter(
 			(blog) =>
