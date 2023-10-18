@@ -22,9 +22,9 @@ export default async function BlogPage() {
 	}, {} as Record<string, number>);
 
 
-	const featured = allBlogs.find((blog) => blog.slug === "22dconsulting")!;
-	const top2 = allBlogs.find((blog) => blog.slug === "tangerines-youtube")!;
-	const top3 = allBlogs.find((blog) => blog.slug === "hermine")!;
+	const featured = allBlogs.find((blog) => blog.slug === "a1")!;
+	const top2 = allBlogs.find((blog) => blog.slug === "a3")!;
+	const top3 = allBlogs.find((blog) => blog.slug === "a2")!;
 	const sorted = allBlogs
 		.filter((p) => p.published)
 		.filter(
