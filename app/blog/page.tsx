@@ -47,7 +47,7 @@ export default async function BlogPage() {
 						Blog
 					</h2>
 					<p className="mt-4 text-zinc-400">
-						My blog, investments, and partnerships are listed here.
+						Welcome to my Blogs and Articles.  I am sharing my thoughts and experiences on topics like Organisational Security and Privacy as well as updates from my Sports and Adventures.
 					</p>
 				</div>
 				<div className="w-full h-px bg-zinc-800" />
