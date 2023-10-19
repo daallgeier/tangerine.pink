@@ -52,7 +52,7 @@ export default async function BlogPage() {
 							Welcome to my Blogs and Articles.  I am sharing my thoughts and experiences on topics like Organisational Security and Privacy as well as updates from my Sports and Adventures.
 						</p>
 					</div>
-					<div className="w-full h-px bg-zinc-800" />
+					<div className="w-full h-px bg-zinc-100" />
 
 					<div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
 						<Card>
