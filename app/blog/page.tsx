@@ -40,7 +40,7 @@ export default async function BlogPage() {
 	return (
 		<Suspense fallback={<p>Loading blog...</p>}>
 			<div
-				style={{ 
+				style={{
 					backgroundImage: "url('/2023-10-oludeniz1700-sunsetheart.jpg')",
 					backgroundPosition: "center",
 					backgroundSize: "cover",
@@ -51,8 +51,9 @@ export default async function BlogPage() {
 					bottom: 0,
 					zIndex: -1,
 					height: "100vh",
-				 }}
-				className="relative pb-16 bg-gray-900 bg-cover">
+				}}
+			/>
+			<div className="relative pb-16 bg-gray-900 bg-cover">
 				<Navigation />
 				<div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
 					<div className="max-w-2xl mx-auto lg:mx-0">
