@@ -33,8 +33,8 @@ module.exports = {
 				display: ["var(--font-calsans)"],
 			},
 			backgroundImage: {
-				"gradient-radial":
-					"radial-gradient(50% 50% at 50% 50%, var(--tw-gradient-stops))",
+				// "gradient-radial":
+				// 	"radial-gradient(50% 50% at 50% 50%, var(--tw-gradient-stops))",
 				"custom-image": 
 					"url('/2023-10-oludeniz1700-sunsetheart.jpg')",
 			},
