@@ -12,7 +12,7 @@ export default function Home() {
 	return (
 		<div
 			style={{ backgroundImage: "url('/2023-10-oludeniz1700-sunsetheart.jpg')" }}
-			className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden from-black rgba(204, 219, 219, 0.2) to-black"
+			className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gray-900 bg-center bg-cover"
 		>
 			<nav className="my-16 animate-fade-in">
 				<ul className="flex items-center justify-center gap-4">
