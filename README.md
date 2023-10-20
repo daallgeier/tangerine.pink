@@ -1,7 +1,7 @@
 <div align="center">
     <a href="https://tangerine.pink"><h1 align="center">tangerine.pink</h1></a>
     
-My personal website, built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), [Upstash](https://upstash.com?ref=tangerine.pink), [Contentlayer](https://www.contentlayer.dev/) and deployed to [Vercel](https://vercel.com/) forked from [chronark.com](https://chonark.com) and [chronark/chronark.com](/chronark/chronark.com).
+My personal website, built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), [Upstash](https://upstash.com?ref=tangerine.pink), [Contentlayer](https://www.contentlayer.dev/) and deployed to [Vercel](https://vercel.com/) forked from [chronark.com](https://chonark.com) and [chronark/chronark.com](https://github.com/chronark/chronark.com).
 
 </div>
 
