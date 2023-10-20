@@ -27,10 +27,10 @@ export default async function BlogPage() {
 	const top3 = allBlogs.find((blog) => blog.slug === "new-offerings")!;
 	const sorted = allBlogs
 		.filter((p) => p.published)
-		.filter(
+		/* .filter(
 			(blog) =>
-				blog.slug == featured.slug
-		)
+				blog.slug !== featured.slug
+		) */
 		.sort(
 			(a, b) =>
 				new Date(b.date ?? Number.POSITIVE_INFINITY).getTime() -
