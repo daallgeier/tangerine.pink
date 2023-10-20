@@ -29,7 +29,7 @@ export default async function BlogPage() {
 		.filter((p) => p.published)
 		.filter(
 			(blog) =>
-				blog.slug !== featured.slug
+				blog.slug == featured.slug
 		)
 		.sort(
 			(a, b) =>
