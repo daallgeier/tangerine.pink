@@ -4,20 +4,24 @@ import Particles from "./components/particles";
 
 const navigation = [
 	{ name: "Projects", href: "/projects" },
+	{ name: "Blog", href: "/blog" },
 	{ name: "Contact", href: "/contact" },
 	{ name: "Adventures ↗️", href: "https://youtube.com/@daallgeier" },
 ];
 
 export default function Home() {
 	return (
-		<div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
+		<div
+			style={{ backgroundImage: "url('/2023-10-oludeniz1700-sunsetheart.jpg')" }}
+			className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gray-900 bg-center bg-cover"
+		>
 			<nav className="my-16 animate-fade-in">
-				<ul className="flex items-center justify-center gap-4">
+				<ul className="flex items-center justify-center gap-5">
 					{navigation.map((item) => (
 						<Link
 							key={item.href}
 							href={item.href}
-							className="text-sm duration-500 text-zinc-500 hover:text-zinc-300"
+							className="text-lg duration-500 text-white hover:text-zinc-500 font-medium hover:font-bold"
 						>
 							{item.name}
 						</Link>
@@ -35,35 +39,59 @@ export default function Home() {
 
 			<div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
 			<div className="my-16 text-center animate-fade-in">
-				<h2 className="text-sm text-zinc-500 ">
-					Servus, I am Tangerine! During the day I run {" "}
+				<h2 className="text-base text-white">
+
+					Servus, I am Tangerine! I cofounded {" "}
+          
 					<Link
 						target="_blank"
 						href="https://22dconsulting.com"
-						className="underline duration-500 hover:text-zinc-300"
+						className="underline duration-500 hover:text-zinc-500"
 					>
 						22d consulting
 					</Link>
 
+					{" "}<wbr />and I am investing through {" "}
 
-					{" "}and I am working on{" "}
 					<Link
 						target="_blank"
 						href="https://dahoam.ventures"
-						className="underline duration-500 hover:text-zinc-300"
+						className="underline duration-500 hover:text-zinc-500"
 					>
 						dahoam ventures
-					</Link>{" "}
-					{" "}at night.{" "}
-					<wbr/>
-					Follow my paragliding adventures on{" "}
+					</Link>
+
+					{" "}at night. See all my
+
+					<Link
+						target="_blank"
+						href="/projects"
+						className="underline duration-500 hover:text-zinc-500"
+					>
+						{" "}Projects
+					</Link>
+
+					. <br /><br />Follow my paragliding adventures on{" "}
+
 					<Link
 						target="_blank"
 						href="https://youtube.com/@daallgeier"
-						className="underline duration-500 hover:text-zinc-300"
+						className="underline duration-500 hover:text-zinc-500"
 					>
 						YouTube
-					</Link>!
+					</Link>
+
+					{" "} and see all my other socials on the{" "}
+					<Link
+						target="_blank"
+						href="/contact"
+						className="underline duration-500 hover:text-zinc-500"
+					>
+						Contact
+					</Link>
+
+					{" "} page.
+
 				</h2>
 			</div>
 		</div>
