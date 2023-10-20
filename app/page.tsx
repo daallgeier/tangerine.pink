@@ -15,12 +15,12 @@ export default function Home() {
 			className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gray-900 bg-center bg-cover"
 		>
 			<nav className="my-16 animate-fade-in">
-				<ul className="flex items-center justify-center gap-4">
+				<ul className="flex items-center justify-center gap-5">
 					{navigation.map((item) => (
 						<Link
 							key={item.href}
 							href={item.href}
-							className="text-sm duration-500 text-zinc-800 hover:text-zinc-500"
+							className="text-m duration-500 text-white hover:text-zinc-500 font-medium hover:font-bold"
 						>
 							{item.name}
 						</Link>
@@ -38,8 +38,8 @@ export default function Home() {
 
 			<div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
 			<div className="my-16 text-center animate-fade-in">
-				<h2 className="text-sm text-white">
-					Servus, I am Tangerine, People also call me Dominik. I run {" "}
+				<h2 className="text-base text-white">
+					Servus, I am Tangerine! During the day I run {" "}
 					<Link
 						target="_blank"
 						href="https://22dconsulting.com"
@@ -48,8 +48,8 @@ export default function Home() {
 						22d consulting
 					</Link>
 
-
 					{" "}and I am working on{" "}
+
 					<Link
 						target="_blank"
 						href="https://dahoam.ventures"
@@ -57,7 +57,17 @@ export default function Home() {
 					>
 						dahoam ventures
 					</Link>{" "}
-					{" "}at night.
+					{" "}at night.  Follow my paragliding adventures on{" "}
+					<Link
+						target="_blank"
+						href="https://youtube.com/@daallgeier"
+						className="underline duration-500 hover:text-zinc-500"
+					>
+						YouTube
+					</Link>
+
+					!
+
 				</h2>
 			</div>
 		</div>
