@@ -6,6 +6,7 @@ const navigation = [
 	{ name: "Projects", href: "/projects" },
 	{ name: "Blog", href: "/blog" },
 	{ name: "Contact", href: "/contact" },
+	{ name: "Adventures ↗️", href: "https://youtube.com/@daallgeier" },
 ];
 
 export default function Home() {
@@ -41,7 +42,7 @@ export default function Home() {
 				<h2 className="text-base text-white">
 
 					Servus, I am Tangerine! I cofounded {" "}
-
+          
 					<Link
 						target="_blank"
 						href="https://22dconsulting.com"
