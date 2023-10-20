@@ -64,7 +64,7 @@ export default function Home() {
 					{" "}at night. See all my{" "}
 
 					<Link
-						target="_blank"
+						target=""
 						href="/projects"
 						className="underline duration-500 hover:text-zinc-500"
 					>
@@ -83,7 +83,7 @@ export default function Home() {
 
 					{" "} and see all my other socials on the{" "}
 					<Link
-						target="_blank"
+						target=""
 						href="/contact"
 						className="underline duration-500 hover:text-zinc-500"
 					>
