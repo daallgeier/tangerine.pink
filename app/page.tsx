@@ -12,7 +12,7 @@ const navigation = [
 export default function Home() {
 	return (
 		<div
-			style={{ backgroundImage: "url('/2023-10-oludeniz1700-sunsetheart.jpg')" }}
+			style={{ backgroundImage: "url('/2023-10-oludeniz1700-sunsetheart-compressed.webp')" }}
 			className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gray-900 bg-center bg-cover"
 		>
 			<nav className="my-16 animate-fade-in">
