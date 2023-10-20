@@ -15,19 +15,19 @@ const socials = [
 		icon: <InstagramIcon size={20} />,
 		href: "https://instagram.com/da_allgeier",
 		label: "Instagram",
-		handle: "@daallgeier",
+		handle: "@da_allgeier",
 	},
 	{
 		icon: <LinkedinIcon size={20} />,
 		href: "https://linkedin.com/in/dominikkugelmann",
 		label: "LinkedIn",
-		handle: "@daallgeier",
+		handle: "Tangerine D. Kugelmann",
 	},
 	{
 		icon: <Twitter size={20} />,
 		href: "https://twitter.com/da_allgeier",
 		label: "Twitter",
-		handle: "@daallgeier",
+		handle: "@da_allgeier",
 	},
 	{
 		icon: <Mail size={20} />,

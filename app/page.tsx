@@ -61,14 +61,14 @@ export default function Home() {
 						dahoam ventures
 					</Link>
 
-					{" "}at night. See all my
+					{" "}at night. See all my{" "}
 
 					<Link
 						target="_blank"
 						href="/projects"
 						className="underline duration-500 hover:text-zinc-500"
 					>
-						{" "}Projects
+						Projects
 					</Link>
 
 					. <br /><br />Follow my paragliding adventures on{" "}
