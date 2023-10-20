@@ -20,7 +20,7 @@ export default function Home() {
 						<Link
 							key={item.href}
 							href={item.href}
-							className="text-m duration-500 text-white hover:text-zinc-500 font-medium hover:font-bold"
+							className="text-lg duration-500 text-white hover:text-zinc-500 font-medium hover:font-bold"
 						>
 							{item.name}
 						</Link>
@@ -39,7 +39,9 @@ export default function Home() {
 			<div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
 			<div className="my-16 text-center animate-fade-in">
 				<h2 className="text-base text-white">
-					Servus, I am Tangerine! During the day I run {" "}
+
+					Servus, I am Tangerine! I cofounded {" "}
+
 					<Link
 						target="_blank"
 						href="https://22dconsulting.com"
@@ -48,7 +50,7 @@ export default function Home() {
 						22d consulting
 					</Link>
 
-					{" "}and I am working on{" "}
+					{" "}<wbr />and I am investing through {" "}
 
 					<Link
 						target="_blank"
@@ -56,8 +58,20 @@ export default function Home() {
 						className="underline duration-500 hover:text-zinc-500"
 					>
 						dahoam ventures
-					</Link>{" "}
-					{" "}at night.  Follow my paragliding adventures on{" "}
+					</Link>
+
+					{" "}at night. See all my 
+					
+					<Link 
+						target="_blank"
+						href="/projects"
+						className="underline duration-500 hover:text-zinc-500"
+					>
+						{" "}Projects
+					</Link>
+					
+					. <br /><br />Follow my paragliding adventures on{" "}
+
 					<Link
 						target="_blank"
 						href="https://youtube.com/@daallgeier"
@@ -66,7 +80,16 @@ export default function Home() {
 						YouTube
 					</Link>
 
-					!
+					{" "} and see all my other socials on the{" "}
+					<Link
+						target="_blank"
+						href="/contact"
+						className="underline duration-500 hover:text-zinc-500"
+					>
+						Contact
+					</Link>
+
+					{" "} page.
 
 				</h2>
 			</div>
