@@ -10,8 +10,8 @@
 name: Update security.txt File
 on:
   schedule:
-#    - cron: * * 15 12 *
-    - cron: 45 * * * *
+    - cron: * * 15 12 *
+#    - cron: 45 * * * *
 
 jobs:
   create_issue:
