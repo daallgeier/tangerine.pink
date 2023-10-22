@@ -1,0 +1,10 @@
+Contact: https://github.com/daallgeier/tangerine.pink/issues/new
+Contact: https://github.com/dahoam.ventures/tangerine.pink/issues/new
+Contact: mailto:us@dahoam.ventures
+Expires: 2024-12-31T22:59:00.000Z
+Preferred-Languages: en
+Canonical: https://tangerine.pink/.well-known/security.txt
+Canonical: https://tangerine.lgbt/.well-known/security.txt
+Canonical: https://dahoam.ventures/.well-known/security.txt
+
+The fbi wasn't here.
