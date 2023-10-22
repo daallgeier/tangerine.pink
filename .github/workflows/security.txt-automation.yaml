@@ -1,0 +1,38 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+# GitHub recommends pinning actions to a commit SHA.
+# To get a newer version, you will need to update the SHA.
+# You can also reference a tag or branch, but the action may change without warning.
+
+name: Update security.txt File
+on:
+  schedule:
+#    - cron: * * 15 12 *
+    - cron: 45 * * * *
+
+jobs:
+  create_issue:
+    name: Update security.txt File
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Create security.txt File
+        uses: imjohnbo/issue-bot@3d96848fb5e9a4a473bb81ae62b4b4866a56e93a
+        with:
+          assignees: "daallgeier"
+          labels: "bug"
+          title: "Update security.txt File"
+          body: |
+            # Update security.txt File
+            This is an automated issue to update the security.txt file.
+            Please see the [security.txt](https://securitytxt.org/) website for more information.
+            ## Security.txt File
+            /.well-known/security.txt
+          pinned: false
+          close-previous: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
