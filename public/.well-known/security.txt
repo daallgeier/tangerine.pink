@@ -1,5 +1,5 @@
 Contact: https://github.com/daallgeier/tangerine.pink/issues/new
-Contact: https://github.com/daallgeier/dahoam.ventures/issues/new
+Contact: https://github.com/daallgeier/dahoam-ventures/issues/new
 Contact: mailto:us@dahoam.ventures
 Expires: 2024-12-31T22:59:00.000Z
 Preferred-Languages: en
