@@ -62,6 +62,9 @@ dependencies:
   remark-gfm:
     specifier: 3.0.1
     version: 3.0.1
+  simple-icons:
+    specifier: ^9.19.0
+    version: 9.19.0
   typescript:
     specifier: ^5.2.2
     version: 5.2.2
@@ -3208,6 +3211,11 @@ packages:
       jsonc-parser: 3.2.0
       vscode-oniguruma: 1.7.0
       vscode-textmate: 8.0.0
+    dev: false
+
+  /simple-icons@9.19.0:
+    resolution: {integrity: sha512-1qaJeBYKYzEcn1l7Jtm0BJMc96BGlnmpQvZMDsNiFDIJkJq6mCdPdH9oIGZUR86gfurJylgJ99R53DO6q/xwfQ==}
+    engines: {node: '>=0.12.18'}
     dev: false
 
   /sort-keys@5.0.0:
