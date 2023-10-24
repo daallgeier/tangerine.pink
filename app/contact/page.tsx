@@ -52,8 +52,9 @@ export default function Example() {
 			<Navigation />
 			<div className="container flex items-center justify-center min-h-screen px-4 mx-aut">
 				<div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
+					<div className="flex flex-wrap justify-center overflow-hidden pt-16 sm:pt-0">
 						{socials.map((s) => (
-							<Card>
+							<Card key={s.handle} className="w-full sm:w-1/3">
 								<Link
 									href={s.href}
 									target="_blank"
@@ -74,12 +75,14 @@ export default function Example() {
 											{s.label}
 										</span>
 									</div>
+									<div className="absolute inset-0 z-10 transition-all duration-300 bg-gradient-to-t from-zinc-500/50 to-transparent group-hover:from-zinc-500/75" />
 								</Link>
 							</Card>
 						))}
 					</div>
 				</div>
 			</div>
+		</div>
 
 	);
 }
