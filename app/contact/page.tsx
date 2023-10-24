@@ -68,7 +68,7 @@ export default function Example() {
 			<Navigation />
 			<div className="container flex items-center justify-center min-h-screen px-4 mx-aut">
 				<div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
-					<div className="overflow-auto h-screen py-20">
+					<div className="overflow-auto h-screen overflow-y-scroll no-scrollbar py-20">
 						{socials.map((s) => (
 							<Card>
 								<Link
