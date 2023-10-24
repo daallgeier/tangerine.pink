@@ -42,6 +42,18 @@ const socials = [
 		label: "Github",
 		handle: "daallgeier",
 	},
+	{
+		icon: <Github size={20} />,
+		href: "https://github.com/daallgeier",
+		label: "Github",
+		handle: "daallgeier",
+	},
+	{
+		icon: <Github size={20} />,
+		href: "https://github.com/daallgeier",
+		label: "Github",
+		handle: "daallgeier",
+	},
 ];
 
 export default function Example() {
