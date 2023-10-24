@@ -1,5 +1,9 @@
 "use client";
 import { Github, InstagramIcon, LinkedinIcon, Mail, Twitter, YoutubeIcon } from "lucide-react";
+import { FaGithub, FaInstagram, FaInstagramSquare, FaLinkedin, FaTwitter, FaTiktok, FaYoutube, FaCalendarPlus, } from "react-icons/fa";
+import { BiLogoInstagramAlt } from "react-icons/bi";
+import { HiMail } from "react-icons/hi";
+import { SimpleIcon, siTiktok } from "simple-icons";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
@@ -7,49 +11,49 @@ import Image from "next/image";
 
 const socials = [
 	{
-		icon: <YoutubeIcon size={20} />,
+		icon: <FaYoutube size={20} />,
 		href: "https://youtube.com/@daallgeier",
 		label: "YouTube",
 		handle: "@daallgeier",
 	},
 	{
-		icon: <InstagramIcon size={20} />,
+		icon: <BiLogoInstagramAlt size={20} />,
 		href: "https://instagram.com/da_allgeier",
 		label: "Instagram",
 		handle: "@da_allgeier",
 	},
 	{
-		icon: <LinkedinIcon size={20} />,
-		href: "https://linkedin.com/in/dominikkugelmann",
-		label: "LinkedIn",
-		handle: "Tangerine D. Kugelmann",
+		icon: <FaTiktok size={20} />,
+		href: "https://tiktok.com/@tagerinekugel",
+		label: "TikTok",
+		handle: "@tangerinekugel",
 	},
 	{
-		icon: <Twitter size={20} />,
+		icon: <FaTwitter size={20} />,
 		href: "https://twitter.com/da_allgeier",
 		label: "Twitter",
 		handle: "@da_allgeier",
 	},
 	{
-		icon: <Mail size={20} />,
+		icon: <FaLinkedin size={20} />,
+		href: "https://linkedin.com/in/dominikkugelmann",
+		label: "LinkedIn",
+		handle: "Tangerine",
+	},
+	{
+		icon: <HiMail size={20} />,
 		href: "mailto:hi+web@tangerine.pink",
 		label: "Email",
 		handle: "hi@tangerine.pink",
 	},
 	{
-		icon: <Github size={20} />,
-		href: "https://github.com/daallgeier",
-		label: "Github",
-		handle: "daallgeier",
+		icon: <FaCalendarPlus size={20} />,
+		href: "https://cal.com/tangerine",
+		label: "cal.com",
+		handle: "tangerine",
 	},
 	{
-		icon: <Github size={20} />,
-		href: "https://github.com/daallgeier",
-		label: "Github",
-		handle: "daallgeier",
-	},
-	{
-		icon: <Github size={20} />,
+		icon: <FaGithub size={20} />,
 		href: "https://github.com/daallgeier",
 		label: "Github",
 		handle: "daallgeier",
@@ -83,7 +87,7 @@ export default function Example() {
 										<span className="text-xl font-medium duration-150 lg:text-3xl text-white group-hover:text-white font-display">
 											{s.handle}
 										</span>
-										<span className="mt-4 text-sm text-center duration-1000 text-white group-hover:text-zinc-200">
+										<span className="mt-4 text-sm text-center duration-1000 text-white group-hover:text-zinc-200 break-words">
 											{s.label}
 										</span>
 									</div>
