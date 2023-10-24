@@ -52,13 +52,13 @@ export default function Example() {
 			<Navigation />
 			<div className="container flex items-center justify-center min-h-screen px-4 mx-aut">
 				<div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
-					<div className="overflow-auto top-73">
+					<div className="overflow-auto h-screen pt-20">
 						{socials.map((s) => (
 							<Card>
 								<Link
 									href={s.href}
 									target="_blank"
-									className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 md:  lg:  md:p-16"
+									className="p-6 relative flex flex-col items-center gap-4 duration-700 group md:gap-4 md:  lg:  md:p-6"
 								>
 									<span
 										className="absolute w-px h-2/3 bg-gradient-to-b from-zinc-500 via-zinc-500/50 to-transparent"
