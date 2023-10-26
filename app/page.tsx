@@ -10,6 +10,14 @@ const navigation = [
 ];
 
 export default function Home() {
+	useEffect(() => {
+		// Disable scrolling when the component mounts
+		document.body.style.overflow = "hidden";
+		// Re-enable scrolling when the component unmounts
+		return () => {
+		  document.body.style.overflow = "auto";
+		};
+	  }, []);
 	return (
 		<div
 			style={{ backgroundImage: "url('/2023-10-oludeniz1700-sunsetheart-compressed.webp')" }}
