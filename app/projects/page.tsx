@@ -44,6 +44,7 @@ export default async function ProjectsPage() {
 			backgroundImage: "url('/2023-10-oludeniz1700-sunsetheart-compressed.webp')",
 			backgroundPosition: "center",
 			backgroundSize: "cover",
+			backgroundAttachment: "fixed",
 		}}>
 			<Navigation />
 			<div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
