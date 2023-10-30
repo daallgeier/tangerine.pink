@@ -55,7 +55,7 @@ export default async function ProjectsPage() {
 						My projects, investments, and partnerships are listed here.
 					</p>
 				</div>
-				<div className="w-full h-px bg-zinc-800" />
+				<div className="w-full h-3 bg-zinc-800" />
 
 				<div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
 					<Card>
