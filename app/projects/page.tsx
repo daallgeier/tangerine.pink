@@ -41,7 +41,7 @@ export default async function ProjectsPage() {
 		<Suspense fallback={<p>Loading projects...</p>}>
 		<div className="relative pb-16 overflow-hidden bg-center bg-cover bg-transparent"
 		style={{
-			backgroundImage: "url('public/2023-10-oludeniz1700-sunsetheart-compressed.webp')",
+			backgroundImage: "url('/public/2023-10-oludeniz1700-sunsetheart-compressed.webp')",
 			backgroundPosition: "center",
 			backgroundSize: "cover",
 		}}>
