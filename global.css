@@ -25,3 +25,9 @@
       }
     }
   }
+
+  @media (max-width: 640px) {
+    body.projects {
+      background-attachment: fixed;
+    }
+  }
