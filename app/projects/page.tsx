@@ -46,8 +46,6 @@ export default async function ProjectsPage() {
 					backgroundImage: "url('public/2023-10-oludeniz1700-sunsetheart-compressed.webp')",
 					backgroundPosition: "center",
 					backgroundSize: "cover",
-					backgroundRepeat: "no-repeat",
-					backgroundAttachment: "fixed",
 				}
 				}>
 				<div className="max-w-2xl mx-auto lg:mx-0">
