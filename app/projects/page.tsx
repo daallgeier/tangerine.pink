@@ -42,7 +42,7 @@ export default async function ProjectsPage() {
 		<div className="bg-transparent"
 		style={{
 			backgroundImage: "url('/2023-10-oludeniz1700-sunsetheart-compressed.webp')",
-			backgroundPosition: "fixed",
+			backgroundPosition: "center",
 			backgroundSize: "cover",
 			backgroundAttachment: "fixed",
 			position: "fixed",
