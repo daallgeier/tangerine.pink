@@ -9,7 +9,6 @@ type Props = {
 
 export const Article : React.FC<Props> = ({ project, views }) => {
 	return (
-		<div className="bg-gray-400 bg-fill">
 		<Link href={`/projects/${project.slug}`}>
 			<article className="p-4 md:p-8 bg-gray-900 bg-fill">
 				<div className="flex justify-between gap-2 items-center">
@@ -37,5 +36,5 @@ export const Article : React.FC<Props> = ({ project, views }) => {
 				</p>
 			</article>
 		</Link>
-		</div>	);
+		);
 };
