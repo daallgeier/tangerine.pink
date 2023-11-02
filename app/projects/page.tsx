@@ -39,10 +39,10 @@ export default async function ProjectsPage() {
 
 	return (
 		<Suspense fallback={<p>Loading projects...</p>}>
-		<div className="bg-center bg-cover bg-transparent"
+		<div className="bg-fixed bg-top bg-left bg-right bg-bottom bg-transparent"
 		style={{
 			backgroundImage: "url('/2023-10-oludeniz1700-sunsetheart-compressed.webp')",
-			backgroundPosition: "center",
+			backgroundPosition: "fixed",
 			backgroundSize: "cover",
 			backgroundAttachment: "fixed",
 		}}></div>
