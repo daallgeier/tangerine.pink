@@ -39,6 +39,13 @@ export default async function ProjectsPage() {
 
 	return (
 		<Suspense fallback={<p>Loading projects...</p>}>
+		<div className="bg-center bg-cover bg-transparent"
+		style={{
+			backgroundImage: "url('/2023-10-oludeniz1700-sunsetheart-compressed.webp')",
+			backgroundPosition: "center",
+			backgroundSize: "cover",
+			backgroundAttachment: "fixed",
+		}}></div>
 		<div className="relative pb-16"
 		>
 
@@ -137,13 +144,6 @@ export default async function ProjectsPage() {
 				</div>
 			</div>
 		</div>
-		<div className="bg-center bg-cover bg-transparent"
-		style={{
-			backgroundImage: "url('/2023-10-oludeniz1700-sunsetheart-compressed.webp')",
-			backgroundPosition: "center",
-			backgroundSize: "cover",
-			backgroundAttachment: "fixed",
-		}}></div>
 		</Suspense>
 	);
 }
