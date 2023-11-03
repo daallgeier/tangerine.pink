@@ -60,7 +60,7 @@ export default async function ProjectsPage() {
 					<h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
 						Projects
 					</h2>
-					<p className="mt-4 text-zinc-400">
+					<p className="mt-4 text-zinc-100">
 						My projects, investments, and partnerships are listed here.
 					</p>
 				</div>
@@ -96,7 +96,7 @@ export default async function ProjectsPage() {
 								>
 									{featured.title}
 								</h2>
-								<p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
+								<p className="mt-4 leading-8 duration-150 text-zinc-200 group-hover:text-zinc-300">
 									{featured.description}
 								</p>
 								<div className="absolute bottom-4 md:bottom-8">
