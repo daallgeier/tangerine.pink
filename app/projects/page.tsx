@@ -45,7 +45,7 @@ export default async function ProjectsPage() {
 			backgroundPosition: "center",
 			backgroundSize: "cover",
 			// backgroundAttachment: "fixed",
-			position: "fixed",
+			// position: "fixed",
 			top: 0,
 			left: 0,
 			bottom: 0,
