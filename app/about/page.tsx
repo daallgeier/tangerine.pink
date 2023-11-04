@@ -8,11 +8,6 @@ import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import Image from "next/image";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-	title: "About",
-};
 
 const experiences = [
 	{
