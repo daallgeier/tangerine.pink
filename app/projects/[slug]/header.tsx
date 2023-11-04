@@ -3,6 +3,11 @@ import { ArrowLeft, Eye, Github, Instagram, Twitter, } from "lucide-react";
 import type { siTiktok } from 'simple-icons';
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: {project.title},
+};
 
 type Props = {
 	project: {
