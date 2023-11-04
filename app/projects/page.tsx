@@ -44,7 +44,7 @@ export default async function ProjectsPage() {
 			backgroundImage: "url('/2023-10-oludeniz1700-sunsetheart-compressed.webp')",
 			backgroundPosition: "center",
 			backgroundSize: "cover",
-			backgroundAttachment: "fixed",
+			// backgroundAttachment: "fixed",
 			position: "fixed",
 			top: 0,
 			left: 0,
