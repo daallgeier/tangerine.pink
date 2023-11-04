@@ -5,6 +5,12 @@ import { Header } from "./header";
 import "./mdx.css";
 import { ReportView } from "./view";
 import { Redis } from "@upstash/redis";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: `%{project.title}`,
+};
+
 
 export const revalidate = 60;
 

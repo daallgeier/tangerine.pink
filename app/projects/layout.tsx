@@ -1,3 +1,5 @@
+import { Metadata } from "next";
+
 export default function ProjectsLayout({
 	children,
 }: { children: React.ReactNode }) {
@@ -7,3 +9,7 @@ export default function ProjectsLayout({
 		</div>
 	);
 }
+
+export const metadata: Metadata = {
+	title: "Projects",
+};

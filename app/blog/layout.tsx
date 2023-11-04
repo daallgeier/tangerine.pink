@@ -1,3 +1,5 @@
+import { Metadata } from "next";
+
 export default function BlogLayout({
 	children,
 }: { children: React.ReactNode }) {
@@ -7,3 +9,7 @@ export default function BlogLayout({
 		</div>
 	);
 }
+
+export const metadata: Metadata = {
+	title: "Blog",
+};

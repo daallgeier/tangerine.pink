@@ -39,20 +39,32 @@ export default async function BlogPage() {
 
 	return (
 		<Suspense fallback={<p>Loading blog...</p>}>
+				<div className="bg-transparent"
+		style={{
+			backgroundImage: "url('/2023-10-oludeniz1700-sunsetheart-compressed.webp')",
+			backgroundPosition: "center",
+			backgroundSize: "cover",
+			// backgroundAttachment: "fixed",
+			position: "fixed",
+			top: 0,
+			left: 0,
+			width: "100vw",
+			height: "100vh",
+		}}></div>
 		<div className="relative pb-16">
 			<Navigation />
 			<div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
 				<div className="max-w-2xl mx-auto lg:mx-0">
-					<h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
+					<h2 className="text-3xl pt-8 font-bold tracking-tight text-white sm:text-4xl">
 						Blog
 					</h2>
-					<p className="mt-4 text-zinc-400">
+					<p className="mt-4 text-white">
 						Welcome to my Blogs and Articles.  I am sharing my thoughts and experiences on topics like Organisational Security and Privacy as well as updates from my Sports and Adventures.
 					</p>
 				</div>
 				<div className="w-full h-px bg-zinc-800" />
 
-				<div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
+				<div className="grid grid-cols-1 mx-auto lg:grid-cols-2 ">
 					<Card>
 						<Link href={`/blog/${featured.slug}`}>
 							<article className="relative w-full h-full p-4 md:p-8">
@@ -65,10 +77,10 @@ export default async function BlogPage() {
 												}).format(new Date(featured.date))}
 											</time>
 										) : (
-											<span>SOON</span>
+											<span> </span>
 										)}
 									</div>
-									<span className="flex items-center gap-1 text-xs text-zinc-500">
+									<span className="flex items-center gap-1 text-xs text-zinc-100">
 										<Eye className="w-4 h-4" />{" "}
 										{Intl.NumberFormat("en-US", { notation: "compact" }).format(
 											views[featured.slug] ?? 0,
@@ -78,15 +90,15 @@ export default async function BlogPage() {
 
 								<h2
 									id="featured-post"
-									className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display"
+									className="mt-4 text-3xl font-bold text-white group-hover:text-white sm:text-4xl font-display"
 								>
 									{featured.title}
 								</h2>
-								<p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
+								<p className="mt-4 leading-8 duration-150 text-white group-hover:text-white">
 									{featured.description}
 								</p>
 								<div className="absolute bottom-4 md:bottom-8">
-									<p className="hidden text-zinc-200 hover:text-zinc-50 lg:block">
+									<p className="hidden text-white hover:text-zinc-50 lg:block">
 										Read more <span aria-hidden="true">&rarr;</span>
 									</p>
 								</div>
@@ -94,7 +106,7 @@ export default async function BlogPage() {
 						</Link>
 					</Card>
 
-					<div className="flex flex-col w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
+					<div className="flex flex-col w-full mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
 						{[top2, top3].map((blog) => (
 							<Card key={blog.slug}>
 								<Article blog={blog} views={views[blog.slug] ?? 0} />
@@ -104,8 +116,8 @@ export default async function BlogPage() {
 				</div>
 				<div className="hidden w-full h-px md:block bg-zinc-800" />
 
-				<div className="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3">
-					<div className="grid grid-cols-1 gap-4">
+				<div className="grid grid-cols-1 mx-auto lg:mx-0 md:grid-cols-3">
+					<div className="grid grid-cols-1">
 						{sorted
 							.filter((_, i) => i % 3 === 0)
 							.map((blog) => (
@@ -114,7 +126,7 @@ export default async function BlogPage() {
 								</Card>
 							))}
 					</div>
-					<div className="grid grid-cols-1 gap-4">
+					<div className="grid grid-cols-1">
 						{sorted
 							.filter((_, i) => i % 3 === 1)
 							.map((blog) => (
@@ -123,7 +135,7 @@ export default async function BlogPage() {
 								</Card>
 							))}
 					</div>
-					<div className="grid grid-cols-1 gap-4">
+					<div className="grid grid-cols-1">
 						{sorted
 							.filter((_, i) => i % 3 === 2)
 							.map((blog) => (
