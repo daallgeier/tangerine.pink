@@ -8,7 +8,6 @@ import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import Image from "next/image";
-import Head from "next/head";
 
 const experiences = [
 	{
@@ -98,7 +97,6 @@ export default function Example() {
 		<div
 			style={{ backgroundImage: "url('/2023-10-oludeniz1700-sunsetheart-compressed.webp')" }}
 			className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gray-900 bg-center bg-cover">
-				<Head><title>About</title></Head>
 			<Navigation />
 			<div className="container flex items-center justify-center min-h-screen px-4 mx-aut">
 				<div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-2 lg:gap-16">
