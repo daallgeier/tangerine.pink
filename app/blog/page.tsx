@@ -55,10 +55,10 @@ export default async function BlogPage() {
 			<Navigation />
 			<div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
 				<div className="max-w-2xl mx-auto lg:mx-0">
-					<h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
+					<h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
 						Blog
 					</h2>
-					<p className="mt-4 text-zinc-200">
+					<p className="mt-4 text-white">
 						Welcome to my Blogs and Articles.  I am sharing my thoughts and experiences on topics like Organisational Security and Privacy as well as updates from my Sports and Adventures.
 					</p>
 				</div>
@@ -90,15 +90,15 @@ export default async function BlogPage() {
 
 								<h2
 									id="featured-post"
-									className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display"
+									className="mt-4 text-3xl font-bold text-white group-hover:text-white sm:text-4xl font-display"
 								>
 									{featured.title}
 								</h2>
-								<p className="mt-4 leading-8 duration-150 text-zinc-200 group-hover:text-zinc-100">
+								<p className="mt-4 leading-8 duration-150 text-white group-hover:text-white">
 									{featured.description}
 								</p>
 								<div className="absolute bottom-4 md:bottom-8">
-									<p className="hidden text-zinc-200 hover:text-zinc-50 lg:block">
+									<p className="hidden text-white hover:text-zinc-50 lg:block">
 										Read more <span aria-hidden="true">&rarr;</span>
 									</p>
 								</div>
