@@ -58,7 +58,7 @@ export default async function BlogPage() {
 					<h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
 						Blog
 					</h2>
-					<p className="mt-4 text-zinc-400">
+					<p className="mt-4 text-zinc-200">
 						Welcome to my Blogs and Articles.  I am sharing my thoughts and experiences on topics like Organisational Security and Privacy as well as updates from my Sports and Adventures.
 					</p>
 				</div>
