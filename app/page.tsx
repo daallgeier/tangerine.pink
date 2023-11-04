@@ -7,7 +7,6 @@ const navigation = [
 	{ name: "Blog", href: "/blog" },
 	{ name: "About", href: "/about" },
 	{ name: "Contact", href: "/contact" },
-	{ name: "Adventures ↗️", href: "https://youtube.com/@daallgeier" },
 ];
 
 export default function Home() {
