@@ -64,7 +64,7 @@ export default async function BlogPage() {
 				</div>
 				<div className="w-full h-px bg-zinc-800" />
 
-				<div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
+				<div className="grid grid-cols-1 mx-auto lg:grid-cols-2 ">
 					<Card>
 						<Link href={`/blog/${featured.slug}`}>
 							<article className="relative w-full h-full p-4 md:p-8">
@@ -77,10 +77,10 @@ export default async function BlogPage() {
 												}).format(new Date(featured.date))}
 											</time>
 										) : (
-											<span>SOON</span>
+											<span> </span>
 										)}
 									</div>
-									<span className="flex items-center gap-1 text-xs text-zinc-500">
+									<span className="flex items-center gap-1 text-xs text-zinc-100">
 										<Eye className="w-4 h-4" />{" "}
 										{Intl.NumberFormat("en-US", { notation: "compact" }).format(
 											views[featured.slug] ?? 0,
@@ -94,7 +94,7 @@ export default async function BlogPage() {
 								>
 									{featured.title}
 								</h2>
-								<p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
+								<p className="mt-4 leading-8 duration-150 text-zinc-200 group-hover:text-zinc-100">
 									{featured.description}
 								</p>
 								<div className="absolute bottom-4 md:bottom-8">
@@ -106,7 +106,7 @@ export default async function BlogPage() {
 						</Link>
 					</Card>
 
-					<div className="flex flex-col w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
+					<div className="flex flex-col w-full mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
 						{[top2, top3].map((blog) => (
 							<Card key={blog.slug}>
 								<Article blog={blog} views={views[blog.slug] ?? 0} />
@@ -116,8 +116,8 @@ export default async function BlogPage() {
 				</div>
 				<div className="hidden w-full h-px md:block bg-zinc-800" />
 
-				<div className="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3">
-					<div className="grid grid-cols-1 gap-4">
+				<div className="grid grid-cols-1 mx-auto lg:mx-0 md:grid-cols-3">
+					<div className="grid grid-cols-1">
 						{sorted
 							.filter((_, i) => i % 3 === 0)
 							.map((blog) => (
@@ -126,7 +126,7 @@ export default async function BlogPage() {
 								</Card>
 							))}
 					</div>
-					<div className="grid grid-cols-1 gap-4">
+					<div className="grid grid-cols-1">
 						{sorted
 							.filter((_, i) => i % 3 === 1)
 							.map((blog) => (
@@ -135,7 +135,7 @@ export default async function BlogPage() {
 								</Card>
 							))}
 					</div>
-					<div className="grid grid-cols-1 gap-4">
+					<div className="grid grid-cols-1">
 						{sorted
 							.filter((_, i) => i % 3 === 2)
 							.map((blog) => (
