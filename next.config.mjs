@@ -1,4 +1,5 @@
 import { withContentlayer } from "next-contentlayer";
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -9,3 +10,18 @@ const nextConfig = {
 };
 
 export default withContentlayer(nextConfig);
+
+
+const config = {
+    ...nextConfig,
+    webpack: (config, { isServer }) => {
+      if (isServer) {
+        require('./scripts/generate-sitemap')
+      }
+
+      // Add the plugin to your webpack plugins
+      config.plugins.push(new MiniCssExtractPlugin());
+
+      return config
+    },
+}
