@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 		siteName: "tangerine.pink",
 		images: [
 			{
-				url: "https://tangerine.pink/og.png",
+				url: "/images/tangerine-pink-banner-3840-2160.png",
 				width: 1920,
 				height: 1080,
 			},
