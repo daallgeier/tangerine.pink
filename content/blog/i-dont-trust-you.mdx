@@ -1,0 +1,112 @@
+---
+title: How to build your open source company 
+description: Or: How to build your open source company, so I don't have to.   In light of the recent rise of awesome open source products and the claw back happening by big corporates on their open source products I am seeing a need for these new companies to build-in a ulysses pact.
+repository: daallgeier/tangerine.pink/issues/46
+url: 
+date: 2023-11-08
+published: true
+---
+
+As open source founders you have the best of intentions.  At the start you're just building.  Building something you would want to use.  Some day this turns into a willingness to take on the big overstaffed (why do they need 7777 people, again?) corporation with your cool new product.  You launch on ProductHunt, gain over 1000 upvotes within a few hours, stack up nearly 5k stars on Github and score an overextended seed round within weeks.
+
+Awesome! 
+
+What's your [SAFE](https://www.ycombinator.com/documents) agreement saying? Oh you need to deliver high returns?  How high? 5x? 10x? 100x?  Can you guarantee that and stay open source?  Or will you be pressured to sell? Maybe you even have the same investors as your big competitor.  Maybe you'll be forced to sell by your investors.  Oh they say they don't.  How sure are you about the associates words.  Don't forget: They have to report to their Limited Partners and VC’s love their 2&20; it's pretty lucrative once they can sell your company to Google.  Maybe instead of selling to someone you are facing an economic crisis and charging 20% more people for something they used to get for free suddenly looks more appealing.
+
+Oh so you are bootstrapped? Cool!  You've got less variables to think about.  But what happens when you've got 20 employees, 20 Mio in revenue, but have burned out because you forgot that coding is what you love but ended up stuck doing accounting? Well. Will you keep your promise to your community?  
+
+I myself went through a period like this recently.  I really never wanted to sell.  And yet a month or two into my burnout (and before realising that I’ve got it) I started to look into company valuations.  Looked up what the processes were, started to think about the tax burden that might show up, and talked to people who have already sold their company.  I haven't sold yet. But I did take a deeper look than I ever thought I would.   
+
+When you end up selling, you have no control about your vision and ideals anymore. 
+
+This is why you should anticipate a time in your future when you will be weak and ensure that you are prepared and bound by your principles that you set out with.  Choosing your corporate structure and code license early on enables you, your team, and your investors to know the deal and deter future weakness. 
+# I don't trust you 
+to do the right thing when your kid turns 16, tells you that you’ve been coding too hard, and you two gotta spent more time together before they go on to study at Harvard (w/o that scholarship tho).  Go on!  Spend that time with your kid.  I love it!  But I don’t trust you to not screw your community for that.  And yes, you tell me today that’s outrageous for me to even assume you’d do that.  Still don’t trust your word.  
+## The Zero Trust Infrastructure Interlude 
+is here to help you—a software founder—draw a tech parallel to the business fluff below. 
+
+Zero Trust in authentication doesn't mean that we personally distrust our team members to do the right thing.  It doesn't mean that think we work with people who are intentionally bad to our data and infrastructure.  But it does mean that we work with an infrastructure setup so we don't _need_ to trust them.  It means we can be sure that whatever we want is what is going to happen.  Zero Trust means we are setting us up for an environment where a trustworthy user can sit in front of an untrustworthy computer ... and we won't loose data.  Zero Trust means that we can ensure that a user can tell people their password and still we won't have an immediate impact to our data and infrastructure.  Zero Trust means we don't trust anything and anyone till they verified they are safe.  It means we don't need to trust the humans involved. 
+## Zero Trust Governance 
+so I don’t have to trust you. 
+
+Any typical company out there is having a legal fiduciary duty to make its _shareholders_ more money.  This goes from the dozen person bootstrapped company up to the biggest companies out there and no, it doesn't end with your venture capitalist.  If anything they are the ones most bound by this principle.  This principle is enshrined somewhere between laws, bylaws, investment documents, and the handshake between you and the VC's associate.  
+
+This means that the _typical zero trust_ is that your company is going to make its investors money (or die trying).  This really doesn't enshrine a vote of confidence that the code will forever be open source or that the company will be doing its best to enable its other stakeholders to be well thought after beneficiaries.   
+
+This is why using the same principles as we use in technology we can take out the need for all stakeholders to trust us.  Instead of "[trust me bro](https://www.reddit.com/r/LinusTechTips/comments/wn0nsc/lttstorecom_trust_me_bro_warranty_shirt/?rdt=63607)" when being challenged about our longevity  we can simply point to a set of documents that govern our ways of working and governing.  A good setup for long term stability enables your customers, vendors, and other stakeholders to not need to trust your word it enables them to trust the setup.  
+
+So let's get to the beyond meat and sweet potato fries: 
+# What are these principles and setups? 
+All the blah around the reasons are all well and good.  But we still don't know how to actually do it.  We'll look at both code level and corp level solutions and make you aware of potential solutions so you can go and choose your own adventure beyond that.  
+## Licensing 
+Licensing your software is the basic step to even become open source.  I mean we all know that.  Open source without a (standard) license is just asking for trouble.  That's nothing new.  There are a few options and I am not _a_ and very specifically _not your lawyer_ so please be mindful of the following suggestions ;) 
+
+Choosing a license thats irrevocable should probably be your main priority. Seeing that Linux is licensed under  [GPL](https://www.gnu.org/licenses/gpl-3.0.en.html) who's primary selling point is that it fulfils this requirement (and that it forces your downstream users to also use the license—in contrast to MIT) it seems to be a good license for for-profit and radically open open source companies. 
+
+For creative endeavours the [Creative Commons](https://creativecommons.org/share-your-work/cclicenses/) licenses are a good way to embed irrevocability into your published documentation or blog posts.  This blog is licensed under the pretty restrictive  [CC-BY-NC-SA 4.0 Int](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en) for your consumption and remixing but you can't use it commercially (NC) and have to attribute me (BY) and reuse (SA) the same license.   
+### Limitations
+Sadly the right licenses are not bullet prove.  No. Not even GPLv3 is save from being screwed around with.  Look at the recent cases of [Red Hat making changes to its core offerings and how they treat people creating forks](https://www.zdnet.com/article/red-hats-new-rule-open-source-betrayal/).   
+
+Applying a weak copyleft licenses such as the Mozilla Public License may also induce controversy when changing it for future versions of your code.  [HashiCorp did this one with Terraform](https://thenewstack.io/hashicorp-abandons-open-source-for-business-source-license/) when they changed their license to the Business Source License.  A much more restrictive ~~open~~ source license type that in effect limits everyone to just look at the code. 
+
+Seeing these limitations we need to layer other protections on top of our choice of license.  I will provide some options and at least one example for each bellow.  Let's stay with radical free and open source and look at foundations and non-profits first:
+## Foundations and Non-Profits 
+Foundations and non-profits are the original "u can't make me sell this" finger to corporations and money holders.  They just can't be sold and changing any that protect their purposes in their bylaws is often super hard or near impossible.  Our best example for this is going to be Linux and the Linux Foundation:
+### Linux 
+For Linux we can point to an irrevocable GPL license that is forcing us to keep (all current pieces of code and its derivatives) free and open source; we can point to the [[#Linux Foundation's Bylaws|Linux Foundations Bylaws Article II, Sentence 1]] to show that they are a `"mutual benefit corporation"` focused on the `"support, promot[tion], protect[tion] and standardiz[ation of] Linux"`, and we can point to the USA's  Laws that state that non-profits can never be sold to anyone.  Thus we all can pretty much rely on 3 pieces of evidence that Linux is never going private, never going to be sold, and will forever stay free.  We all just kinda need to ensure that the Linux Foundation has enough money to keep operating and keep developing.  I guess we could all [join them](https://www.linuxfoundation.org/about/join)  or [donate](https://www.linuxfoundation.org/about/donate) ;). 
+### Limitations
+There are a few obvious limitations of the non-profit route: It is not for profit.  Sure you are able to get/pay a decent salary to your core staff and contributors.  But you can't raise more traditional investments  and charging for product access will leave a bad taste in many peoples mouths (maybe the fries were bad?).  And don't even think about development by committee if your setup isn't well thought out.  [Think the Linux LTS problem](https://news.ycombinator.com/item?id=37749530). 
+## Standardised Data Storage 
+Using standardised data storage with easy exports enables users to simply go, take their data, and leave.  And even if they don't find another software thats like yours and can import your data they still have access to all of it.  Or they still have a way to read / write their data even if the company goes down. 
+### Obsidian.md 
+Obsidian is freeware but not open source.  However I don't need to [[#^29caa4|trust*]] them to still be around in many years time.  Why?  Because the data I edit with this tool is a simple .txt file (well technically a .md file but that's still an open formatting standard for txt files).    So if obsidian ever gets unusable I can still just open my files using text edit, vim, or github/gitlab.  So I happily use that tool them over say notion because I just know I can keep the data around.  Oh and I even pay them because I want them to have a thriving business.  
+
+\*Except if I choose to store my data on their servers for syncing. Now I need to trust them with keeping that server secure. ^29caa4
+### Limitations 
+You won't have vendor lock in.  Oh ... that wasn't your goal anyway?  I mean obviously there are other limitations with that too.  In the case of obsidian there is no real accountability for their business customers to actually pay the business license fee.  I am sure that that’s why they are also offering a syncing and web hosting fee, and an early adopter edition to their customers. 
+## Golden Share Model 
+The Golden Share Model is pretty close to your standard public or private company.  It allows your company to fundraise using known terms (to investors) and access other capital.  A company adopting the Golden Share Model will split a shares voting rights from its profit rights.  Thus creating at least three different classes of shares.  
+- Class A (the Golden Share) with exactly one share gets to veto the creation, distribution, and redistribution of any and all other classes
+- Class B is a voting only share that get’s to be owned by founders, employees, and other stakeholders.  You could give these shares to non-profits that you trust to steer the company into the right direction in the future too. 
+- Class C is a profit only share that get’s to be used for external investors.  Your investors get to invest in shares the same way they may invest in Facebook.  No publicly traded Facebook share has a voting right. 
+- Class D is a profit only share that get’s to be assigned to your founders and employees to enable them to have a profit share. 
+
+Classes C & D can be bought back by the company at fixed intervals or based on fixed goals by using profits from the companies operation.  Yes; we are building a sustainable business that creates profits not just growth at all costs. 😘
+
+Class A will be given to a Foundation who’s sole purpose it is to ensure the company will stay independent and true to its founding values.  
+
+Class B enables the founders to share voting rights with people they or the foundation deem worthy to participate in steering the company’s direction. 
+
+Having investors only participate in profits isn’t a new thing.  But they may still ask for additional rights especially because they can’t steer the management team w/o voting rights.  Make sure your investors are well informed about the progress of the company and its goals (both financially and its purpose). You may even create an advisory board on top of your board of directors where they can then give their valuable advice on a regular basis and be informed about the companies status.  
+
+For Open Source companies it might then also be advantageous to invite a member of a well known and respected open source foundation (Think Linux or Free Software Foundation) onto their board to have them be there monitoring and enforcing what’s best for the good of the software. 
+### Limitations 
+If you partner with a foundation to keep custody of your Golden Share you may be limiting yourself to that specific external control and their speed of working.  If you quickly need to raise more money and issue new shares and they are having trouble getting signatures down for their approval.  However it may be worth setting up your own foundation and leave that limitation behind.  It’ll increase your upfront cost though.  You also limit yourself to investors willing to have set pre-negotiated returns; not all are willing to do that.  
+## Double Foundation Models 
+Double foundation models have been made popular in the early 1900s by family run companies as a way to ensure the companies longevity beyond a founders death. In general these models are reliant on two foundations.  One of them usually holds voting shares and one holds the profit rights (and in cases distribute them back to the decedents of the original founder family among social benefits and donations too).  
+
+Examples of companies in this category are old and some very well known companies:
+- Robert Bosch Foundation 
+- Rolex Foundation 
+- Karl Zeiss Foundation 
+### Limitations 
+Its a great way to spend loads of money for not being able to raise more later on.  Not something a startup should look at. 
+## (Public) Benefit Corporations (not the label) 
+Benefit corporations are for-profit companies types similar to your traditional LLC but with the expanded fiduciary duty of directors that require them to consider non-financial stakeholders as well as the interests of shareholders. There are jurisdictions globally (including in US States) where these are enshrined in law already and ones where there are active efforts to enshrine these corporation types into law ([Germany](https://purpose-economy.org)) .  
+### Limitations 
+Limitations of this kind of corporations are hard to define as there are many different implementations across the world and each has differences that may or may not help or hinder your type of work. I am not qualified to give a good overview of these differences. And considering I am talking to global open source founders it is hard to know which kind of jurisdiction would be best for you specifically.  
+# Other related stuff 
+You may have heard that OpenAI is a non-profit. And you may have also heard that they have raised a lot of money.  Well here you go.  On their homepage they share why that is.  They also explain their 100x return on investment cap on there.  The OpenAI model: https://openai.com/our-structure 
+
+To regain a good internet, revert the # Enshittification of it, and stop yet another wave of enshittification we need to act and build our companies in a way that they can't be stopped and/or changed back.  But we also need to give open source the resources to ensure they are profitable and not reliant on donations.  Especially if their name is not linux.
+Embed video section about it.
+  ![ ](https://youtu.be/rimtaSgGz_4?si=l2zME2Hy3olHhM3Z&t=2305)
+
+# Sources and Thanks
+Cory Doctorow
+
+###### Linux Foundation's Bylaws 
+https://www.linuxfoundation.org/legal/bylaws#:~:text=ARTICLE%20II%20%E2%80%93%20Purposes 
+>This corporation is a nonprofit mutual benefit corporation, organized and operated to engage in any lawful activity permitted by Section 501(c)(6) of the Internal Revenue Code of 1986, as amended. The purposes of this corporation are to support, promote, protect and standardize Linux and other open source software and technologies.
+
+^85368c
