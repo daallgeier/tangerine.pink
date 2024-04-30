@@ -11,18 +11,5 @@ const nextConfig = {
 
 export default withContentlayer(nextConfig);
 
-module.exports = {
-	async rewrites() {
-	  return [
-		{
-		  source: "/l/:path*",
-		  destination: "https://links.tangerine.pink/:path*",
-		},
-		{
-			source: "/en/:path*",
-			destination: "https://erine.ch/:path*",
-		  },
-	  ];
-	},
-  };
+
   
