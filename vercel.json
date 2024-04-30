@@ -1,0 +1,9 @@
+{
+    "rewrites": [
+      {
+        "source": "/en/:path*",
+        "destination": "https://erine.ch/:path*"
+      }
+    ]
+  }
+  
