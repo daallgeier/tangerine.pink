@@ -1,5 +1,4 @@
 import { withContentlayer } from "next-contentlayer";
-import { Rewrite } from "next/dist/lib/load-custom-routes";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -11,5 +10,3 @@ const nextConfig = {
 
 export default withContentlayer(nextConfig);
 
-
-  
