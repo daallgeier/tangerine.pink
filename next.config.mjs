@@ -17,6 +17,10 @@ module.exports = {
 		  source: "/l/:path*",
 		  destination: "https://links.tangerine.pink/:path*",
 		},
+		{
+			source: "/en/:path*",
+			destination: "https://erine.ch/:path*",
+		  },
 	  ];
 	},
   };
