@@ -12,15 +12,15 @@ import Image from "next/image";
 const socials = [
 	{
 		icon: <FaYoutube size={20} />,
-		href: "https://youtube.com/@daallgeier",
+		href: "https://youtube.com/@actual_tangerine",
 		label: "YouTube",
-		handle: "@daallgeier",
+		handle: "@actual_tangerine",
 	},
 	{
 		icon: <BiLogoInstagramAlt size={20} />,
-		href: "https://instagram.com/da_allgeier",
+		href: "https://instagram.com/actual_tangerine",
 		label: "Instagram",
-		handle: "@da_allgeier",
+		handle: "@@actual_tangerine",
 	},
 	{
 		icon: <FaTiktok size={20} />,
