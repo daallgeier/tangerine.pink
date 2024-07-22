@@ -20,7 +20,7 @@ const socials = [
 		icon: <BiLogoInstagramAlt size={20} />,
 		href: "https://instagram.com/actual_tangerine",
 		label: "Instagram",
-		handle: "@@actual_tangerine",
+		handle: "@actual_tangerine",
 	},
 	{
 		icon: <FaTiktok size={20} />,
