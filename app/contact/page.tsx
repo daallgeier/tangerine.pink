@@ -30,9 +30,9 @@ const socials = [
 	},
 	{
 		icon: <FaTwitter size={20} />,
-		href: "https://twitter.com/da_allgeier",
+		href: "https://twitter.com/reallytangerine",
 		label: "Twitter",
-		handle: "@da_allgeier",
+		handle: "@reallytangerine",
 	},
 	{
 		icon: <FaLinkedin size={20} />,
