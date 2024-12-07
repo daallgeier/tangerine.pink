@@ -14,7 +14,7 @@ const navigation = [
 const images = [
     "/2023-10-oludeniz1700-sunsetheart-compressed.webp",
     "/2023-10-oludeniz1700-flyovercloud.webp",
-    "/image3.png",
+    //"/image3.png",
     // Add more image URLs here
 ];
 
