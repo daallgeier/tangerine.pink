@@ -33,7 +33,7 @@ export default function Home() {
 				className="absolute inset-0 -z-10 animate-fade-in"
 				quantity={100}
 			/>
-			<div className="my-16 text-center animate-fade-in">
+			<div className="my-8 text-center animate-fade-in">
 				<h2 className="text-base text-white">
 					Servus, I am {" "}
 				</h2>
