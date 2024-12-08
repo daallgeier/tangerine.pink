@@ -46,7 +46,7 @@ export default function Home() {
 			<div className="my-16 text-center animate-fade-in">
 				<h2 className="text-base text-white">
 
-					Paragliding Athlete, Skier, and Human. {" "} I am also investing through {" "}
+					Paragliding Athlete, Skier, and Human. {"  "} I am also investing through {" "}
 
 					<Link
 						target="_blank"
@@ -56,14 +56,14 @@ export default function Home() {
 						dahoam ventures
 					</Link>
 
-					. See all my{" "}
+					.  See all my{" "}
 
 					<Link
 						target=""
 						href="/projects"
 						className="underline duration-500 hover:text-zinc-500"
 					>
-						Projects
+						projects
 					</Link>
 
 					. <br /><br />Follow my paragliding adventures on{" "}
