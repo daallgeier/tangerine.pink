@@ -33,6 +33,9 @@ export default function Home() {
 				className="absolute inset-0 -z-10 animate-fade-in"
 				quantity={100}
 			/>
+			<h2 className="text-base text-white">
+				Servus, I am {" "}
+			</h2>
 			<h1 className="z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
 				tangerine 🍊
 			</h1>
@@ -41,17 +44,7 @@ export default function Home() {
 			<div className="my-16 text-center animate-fade-in">
 				<h2 className="text-base text-white">
 
-					Servus, I am Tangerine! I cofounded {" "}
-          
-					<Link
-						target="_blank"
-						href="https://22dconsulting.com"
-						className="underline duration-500 hover:text-zinc-500"
-					>
-						22d consulting
-					</Link>
-
-					{" "}<wbr />and I am investing through {" "}
+					Paragliding Athlete, Skier, and Human. {" "} I am also investing through {" "}
 
 					<Link
 						target="_blank"
@@ -81,13 +74,13 @@ export default function Home() {
 						YouTube
 					</Link>
 
-					{" "} and see all my other socials on the{" "}
+					{" "} or my other socials on the{" "}
 					<Link
 						target=""
 						href="/contact"
 						className="underline duration-500 hover:text-zinc-500"
 					>
-						Contact
+						Links
 					</Link>
 
 					{" "} page.
