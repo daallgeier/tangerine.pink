@@ -50,13 +50,13 @@ export default function Home() {
 
 					<Link
 						target="_blank"
-						href="https://dahoam.ventures"
+						href="https://tang.erine.ch/en/dahoamventures"
 						className="underline duration-500 hover:text-zinc-500"
 					>
 						dahoam ventures
 					</Link>
 
-					{" "}at night. See all my{" "}
+					. See all my{" "}
 
 					<Link
 						target=""
@@ -70,7 +70,7 @@ export default function Home() {
 
 					<Link
 						target="_blank"
-						href="https://youtube.com/@daallgeier"
+						href="https://tange.erine.ch/en/youtube"
 						className="underline duration-500 hover:text-zinc-500"
 					>
 						YouTube
