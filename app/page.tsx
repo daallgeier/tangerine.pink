@@ -69,7 +69,7 @@ export default function Home() {
 						YouTube
 					</Link>
 
-					{" "} or my other socials on the{" "}
+					{" "} or find my other socials on the{" "}
 					<Link
 						target=""
 						href="/contact"
