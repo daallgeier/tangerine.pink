@@ -57,7 +57,7 @@ export default function Home() {
 					</Link>
 					.
 				</h2>
-				<h3 className="text-base text-white my-4">
+				<h3 className="text-base text-white mt-6">
 					
 					Follow my paragliding adventures on{" "}
 
