@@ -38,13 +38,13 @@ export default function Home() {
 					Servus, I am {" "}
 				</h2>
 			</div>
-			<h1 className="mb-4 z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
+			<h1 className="mb-4 z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text drop-shadow-md">
 				tangerine 🍊
 			</h1>
 
 			<div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
 			<div className="my-16 text-center animate-fade-in">
-				<h2 className="text-base text-white">
+				<h3 className="text-base text-white">
 
 					Paragliding Athlete, Skier, and Human. {" "}{" "} Mastering Risk in the Air and in Business: {" "}{" "}
 
@@ -87,7 +87,7 @@ export default function Home() {
 
 					{" "} page.
 
-				</h2>
+				</h3>
 			</div>
 		</div>
 	);
