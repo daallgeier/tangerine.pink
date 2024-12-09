@@ -46,14 +46,14 @@ export default function Home() {
 			<div className="my-16 text-center animate-fade-in">
 				<h2 className="text-base text-white">
 
-					Paragliding Athlete, Skier, and Human. {"  "} I am also investing through {" "}
+					Paragliding Athlete, Skier, and Human. {" "}{" "} Mastering Risk in the Air and in Business: {" "}{" "}
 
 					<Link
 						target="_blank"
 						href="https://tang.erine.ch/en/dahoamventures"
 						className="underline duration-500 hover:text-zinc-500"
 					>
-						dahoam ventures
+						learn more
 					</Link>
 
 					.  See all my{" "}
