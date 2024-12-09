@@ -15,7 +15,7 @@ export default function Home() {
 			style={{ backgroundImage: "url('/2023-10-oludeniz1700-sunsetheart-compressed.webp')" }}
 			className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gray-900 bg-center bg-cover"
 		>
-			<nav className="my-16 animate-fade-in">
+			<nav className="my-16 animate-fade-in drop-shadow-md">
 				<ul className="flex items-center justify-center gap-5">
 					{navigation.map((item) => (
 						<Link
@@ -34,7 +34,7 @@ export default function Home() {
 				quantity={100}
 			/>
 			<div className="mb-8 text-center animate-fade-in">
-				<h2 className="text-base text-white">
+				<h2 className="text-base text-white drop-shadow-md">
 					Servus, I am {" "}
 				</h2>
 			</div>
@@ -43,8 +43,8 @@ export default function Home() {
 			</h1>
 
 			<div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-			<div className="my-16 text-center animate-fade-in">
-				<h3 className="text-base text-white">
+			<div className="my-16 text-center animate-fade-in drop-shadow-md">
+				<h2 className="text-base text-xl text-white">
 
 					Paragliding Athlete, Skier, and Human. {" "}{" "} Mastering Risk in the Air and in Business: {" "}{" "}
 
@@ -55,18 +55,11 @@ export default function Home() {
 					>
 						learn more
 					</Link>
-
-					.  See all my{" "}
-
-					<Link
-						target=""
-						href="/projects"
-						className="underline duration-500 hover:text-zinc-500"
-					>
-						projects
-					</Link>
-
-					. <br /><br />Follow my paragliding adventures on{" "}
+					.
+				</h2>
+				<h3 className="text-base text-white">
+					
+					Follow my paragliding adventures on{" "}
 
 					<Link
 						target="_blank"
