@@ -38,7 +38,7 @@ export default function Home() {
 					Servus, I am {" "}
 				</h2>
 			</div>
-			<h1 className="mb-4 z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text drop-shadow-md">
+			<h1 className="mb-4 z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text drop-shadow-lg">
 				tangerine 🍊
 			</h1>
 
