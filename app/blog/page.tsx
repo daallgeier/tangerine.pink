@@ -8,127 +8,71 @@ import { Card } from "../components/card";
 import { Eye } from "lucide-react";
 import { Suspense } from 'react';
 
+interface Props {
+  blog: Blog;
+  views?: number;
+}
+
+function Article({ blog, views }: Props) {
+  // ... (Article component code)
+}
+
 export const revalidate = 60;
 
 const images = [
-    '/2023-10-oludeniz1700-sunsetheart-compressed.webp',
-    '/2023-10-oludeniz1700-flyovercloud.webp',
-    '/image3.png',
-    // Add more image URLs here
+  '/2023-10-oludeniz1700-sunsetheart-compressed.webp',
+  '/2023-10-oludeniz1700-flyovercloud.webp',
+  '/image3.png',
+  // Add more image URLs here
 ];
 
 export default async function BlogPage() {
-    const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    const [fadingOut, setFadingOut] = useState(false);
+  // ... (state and useEffect for background image fading)
 
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-            if (!document.body.contains(document.getElementById('blog-page'))) {
-                clearInterval(intervalId);
-                return;
-            }
-
-            setFadingOut(true);
-
-            setTimeout(() => {
-                if (!document.body.contains(document.getElementById('blog-page'))) {
-                    clearInterval(intervalId);
-                    return;
-                }
-
-                setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-                setFadingOut(false);
-            }, 1000); // Adjust timing to match your CSS transition duration
-
-        }, 5000); // Change 5000 to your desired interval in milliseconds
-
-        return () => clearInterval(intervalId);
-    }, []);
-
-    const featured = allBlogs.find((blog) => blog.slug === "new-adventures");
-    const top2 = allBlogs.find((blog) => blog.slug === "done");
-    const top3 = allBlogs.find((blog) => blog.slug === "new-offerings");
-    const sorted = allBlogs
-        .filter((p) => p.published)
-        .sort(
-            (a, b) =>
-                new Date(b.date ?? Number.POSITIVE_INFINITY).getTime() -
-                new Date(a.date ?? Number.POSITIVE_INFINITY).getTime(),
-        );
-
-    return (
-        <Suspense fallback={<p>Loading blog...</p>}>
-            <div id="blog-page" className="relative pb-16">
-                <div
-                    style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
-                    className={`absolute inset-0 z-0 bg-gray-900 bg-center bg-cover 
-                                transition-opacity duration-1000 ${fadingOut ? 'opacity-0' : 'opacity-100'}`}
-                />
-                <div className="relative z-10"> {/* Added relative here */}
-                    <Navigation />
-                    <div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
-                        <div className="max-w-2xl mx-auto lg:mx-0">
-                            <h2 className="text-3xl pt-8 font-bold tracking-tight text-white sm:text-4xl">
-                                Blog
-                            </h2>
-                            <p className="mt-4 text-white">
-                                Welcome to my Blogs and Articles.  I am sharing my thoughts and experiences on topics like Organisational Security and Privacy as well as updates from my Sports and Adventures.
-                            </p>
-                        </div>
-                        <div className="w-full h-px bg-zinc-800" />
-
-                        <div className="grid grid-cols-1 mx-auto lg:grid-cols-2 ">
-                            {featured && (
-                                <Card>
-                                    <Link href={`/blog/${featured?.slug}`}>
-                                        <article className="relative w-full h-full p-4 md:p-8">
-                                            <div className="flex items-center justify-between gap-2">
-                                                <div className="text-xs text-zinc-100">
-                                                    {featured.date ? (
-                                                        <time dateTime={new Date(featured.date).toISOString()}>
-                                                            {Intl.DateTimeFormat(undefined, {
-                                                                dateStyle: "medium",
-                                                            }).format(new Date(featured.date))}
-                                                        </time>
-                                                    ) : (
-                                                        <span> </span>
-                                                    )}
-                                                </div>
-                                            </div>
-
-                                            <h2
-                                                id="featured-post"
-                                                className="mt-4 text-3xl font-bold text-white group-hover:text-white sm:text-4xl font-display"
-                                            >
-                                                {featured.title}
-                                            </h2>
-                                            <p className="mt-4 leading-8 duration-150 text-white group-hover:text-white">
-                                                {featured.description}
-                                            </p>
-                                            <div className="absolute bottom-4 md:bottom-8">
-                                                <p className="hidden text-white hover:text-zinc-50 lg:block">
-                                                    Read more <span aria-hidden="true">&rarr;</span>
-                                                </p>
-                                            </div>
-                                        </article>
-                                    </Link>
-                                </Card>
-                            )}
-
-                            <div className="flex flex-col w-full mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
-                                {[top2, top3].map((blog) =>
-                                    blog && (
-                                        <Card key={blog.slug}>
-                                            <Article blog={blog} />
-                                        </Card>
-                                    )
-                                )}
-                            </div>
-                        </div>
-                        {/* ... (rest of the content) */}
-                    </div>
-                </div>
-            </div>
-        </Suspense>
+  const featured = allBlogs.find((blog) => blog.slug === "new-adventures");
+  const top2 = allBlogs.find((blog) => blog.slug === "done");
+  const top3 = allBlogs.find((blog) => blog.slug === "new-offerings");
+  const sorted = allBlogs
+    .filter((p) => p.published)
+    .sort(
+      (a, b) =>
+        new Date(b.date ?? Number.POSITIVE_INFINITY).getTime() -
+        new Date(a.date ?? Number.POSITIVE_INFINITY).getTime(),
     );
+
+  return (
+    <Suspense fallback={<p>Loading blog...</p>}>
+      <div id="blog-page" className="relative pb-16">
+        {/* ... (background image) */}
+        <div className="relative z-10">
+          <Navigation />
+          <div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
+            {/* ... */}
+            <div className="grid grid-cols-1 mx-auto lg:grid-cols-2 ">
+              {featured && (
+                <Card>
+                  <Link href={`/blog/${featured?.slug}`}>
+                    <article className="relative w-full h-full p-4 md:p-8">
+                      {/* ... (article content) */}
+                    </article>
+                  </Link>
+                </Card>
+              )}
+
+              <div className="flex flex-col w-full mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
+                {[top2, top3].map((blog) =>
+                  blog && (
+                    <Card key={blog.slug}>
+                      <Article blog={blog} /> {/* Article component is used here */}
+                    </Card>
+                  )
+                )}
+              </div>
+            </div>
+            {/* ... (rest of the content) */}
+          </div>
+        </div>
+      </div>
+    </Suspense>
+  );
 }
