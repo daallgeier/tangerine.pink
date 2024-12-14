@@ -1,4 +1,4 @@
-use Client
+"use client"; // Add this back
 
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
@@ -155,17 +155,4 @@ export default async function BlogPage() {
     );
 }
 
-export const metadata = { 
-    metadataBase: new URL("https://tangerine.pink"),
-    title: "Blog - Tangerine",
-    description: "Welcome to my Blogs and Articles.",
-    openGraph: {
-        title: "Blog - Tangerine",
-        description: "Welcome to my Blogs and Articles.",
-    },
-    twitter: {
-        card: "summary_large_image",
-        title: "Blog - Tangerine",
-        description: "Welcome to my Blogs and Articles.",
-    },
-};
+// metadata needs to be defined in the layout file
