@@ -13,7 +13,7 @@ interface Props {
     views?: number;
 }
 
-export default function Article({ blog, views }: Props) {
+function Article({ blog, views }: Props) {
     return (
         <article className="relative flex flex-col p-4 md:p-6 lg:p-8">
             <div className="flex items-center justify-between gap-2">
