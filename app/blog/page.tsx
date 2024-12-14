@@ -1,13 +1,53 @@
-"use client"; // Add this back
+"use client";
 
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
-import { allBlogs } from "contentlayer/generated";
+import { allBlogs, Blog } from "contentlayer/generated";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
-import { Article } from "./article";
 import { Eye } from "lucide-react";
 import { Suspense } from 'react';
+
+interface Props {
+    blog: Blog;
+    views?: number;
+}
+
+export default function Article({ blog, views }: Props) {
+    return (
+        <article className="relative flex flex-col p-4 md:p-6 lg:p-8">
+            <div className="flex items-center justify-between gap-2">
+                <div className="text-sm text-zinc-400">
+                    {blog.date ? (
+                        <time dateTime={new Date(blog.date).toISOString()}>
+                            {Intl.DateTimeFormat(undefined, {
+                                dateStyle: "long",
+                            }).format(new Date(blog.date))}
+                        </time>
+                    ) : (
+                        <span> </span>
+                    )}
+                </div>
+                {views !== undefined && (
+                    <span className="flex items-center gap-1 text-sm text-zinc-400">
+                        <Eye className="w-4 h-4" />{" "}
+                        {Intl.NumberFormat("en-US", { notation: "compact" }).format(views)}
+                    </span>
+                )}
+            </div>
+            <h2 className="mt-4 text-xl font-bold text-white sm:text-2xl font-display">
+                {blog.title}
+            </h2>
+            <p className="mt-4 leading-7 text-zinc-200">{blog.description}</p>
+            <Link
+                href={`/blog/${blog.slug}`}
+                className="mt-4 text-sm font-medium text-white hover:text-zinc-500"
+            >
+                Read more <span aria-hidden="true">&rarr;</span>
+            </Link>
+        </article>
+    );
+}
 
 export const revalidate = 60;
 
@@ -112,7 +152,7 @@ export default async function BlogPage() {
                             <div className="flex flex-col w-full mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
                                 {[top2, top3].map((blog) => (
                                     <Card key={blog.slug}>
-                                        <Article blog={blog} />
+                                        <Article blog={blog} /> 
                                     </Card>
                                 ))}
                             </div>
@@ -154,5 +194,3 @@ export default async function BlogPage() {
         </Suspense>
     );
 }
-
-// metadata needs to be defined in the layout file
