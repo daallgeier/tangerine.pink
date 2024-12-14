@@ -11,5 +11,18 @@ export default function BlogLayout({
 }
 
 export const metadata: Metadata = {
-	title: "Blog",
+	metadataBase: new URL("https://tangerine-pink-2duszalqy-daallgeiers-projects.vercel.app"), 
+	title: "Blog - Tangerine", 
+	description: "Welcome to my Blogs and Articles.", 
+	openGraph: {
+		title: "Blog - Tangerine",
+		description: "Welcome to my Blogs and Articles.",
+		images: ["/2023-10-oludeniz1700-sunsetheart-compressed.webp"], // Added the image
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Blog - Tangerine",
+		description: "Welcome to my Blogs and Articles.",
+		images: ["/2023-10-oludeniz1700-sunsetheart-compressed.webp"], // Added the image
+	},
 };
