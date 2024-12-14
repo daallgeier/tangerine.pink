@@ -77,9 +77,9 @@ export default async function BlogPage() {
     }, []);
 
 
-    const featured = allBlogs.find((blog) => blog.slug === "new-adventures")!;
-    const top2 = allBlogs.find((blog) => blog.slug === "done")!;
-    const top3 = allBlogs.find((blog) => blog.slug === "new-offerings")!;
+    const featured = allBlogs.find((blog) => blog.slug === "new-adventures");
+    const top2 = allBlogs.find((blog) => blog.slug === "done");
+    const top3 = allBlogs.find((blog) => blog.slug === "new-offerings");
     const sorted = allBlogs
         .filter((p) => p.published)
         /* .filter(
