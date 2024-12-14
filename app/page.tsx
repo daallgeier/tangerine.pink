@@ -31,7 +31,7 @@ export default function Home() {
                 setFadingOut(false);
             }, 1000); // Adjust timing to match your CSS transition duration
 
-        }, 50000); // Change 5000 to your desired interval in milliseconds
+        }, 25000); // Change 5000 to your desired interval in milliseconds
 
         return () => clearInterval(intervalId);
     }, []);
