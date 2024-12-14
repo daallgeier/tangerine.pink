@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { allBlogs } from "contentlayer/generated";
@@ -89,7 +87,6 @@ export default async function BlogPage() {
                                                     <span> </span>
                                                 )}
                                             </div>
-                                            {/* Removed the views span */}
                                         </div>
 
                                         <h2
@@ -113,7 +110,7 @@ export default async function BlogPage() {
                             <div className="flex flex-col w-full mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
                                 {[top2, top3].map((blog) => (
                                     <Card key={blog.slug}>
-                                        <Article blog={blog} /> {/* Removed views prop */}
+                                        <Article blog={blog} />
                                     </Card>
                                 ))}
                             </div>
@@ -126,7 +123,7 @@ export default async function BlogPage() {
                                     .filter((_, i) => i % 3 === 0)
                                     .map((blog) => (
                                         <Card key={blog.slug}>
-                                            <Article blog={blog} /> {/* Removed views prop */}
+                                            <Article blog={blog} />
                                         </Card>
                                     ))}
                             </div>
@@ -135,7 +132,7 @@ export default async function BlogPage() {
                                     .filter((_, i) => i % 3 === 1)
                                     .map((blog) => (
                                         <Card key={blog.slug}>
-                                            <Article blog={blog} /> {/* Removed views prop */}
+                                            <Article blog={blog} />
                                         </Card>
                                     ))}
                             </div>
@@ -144,7 +141,7 @@ export default async function BlogPage() {
                                     .filter((_, i) => i % 3 === 2)
                                     .map((blog) => (
                                         <Card key={blog.slug}>
-                                            <Article blog={blog} /> {/* Removed views prop */}
+                                            <Article blog={blog} />
                                         </Card>
                                     ))}
                             </div>
@@ -156,6 +153,17 @@ export default async function BlogPage() {
     );
 }
 
-export const metadata = {
-    // ... (your metadata configuration)
+export const metadata = { 
+    metadataBase: new URL("https://tangerine.pink"),
+    title: "Blog - Tangerine",
+    description: "Welcome to my Blogs and Articles.",
+    openGraph: {
+        title: "Blog - Tangerine",
+        description: "Welcome to my Blogs and Articles.",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Blog - Tangerine",
+        description: "Welcome to my Blogs and Articles.",
+    },
 };
