@@ -35,7 +35,7 @@ export default function Home() {
 			/>
 			<div className="mb-8 text-center animate-fade-in">
 				<h2 className="text-base text-white drop-shadow-md">
-					Servus, I am {" "}
+					Servus, I'm {" "}
 				</h2>
 			</div>
 			<h1 className="mb-4 z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text drop-shadow-lg">
