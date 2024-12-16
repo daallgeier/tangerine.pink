@@ -65,63 +65,48 @@ export default function Home() {
                     className="absolute inset-0 -z-10 animate-fade-in"
                     quantity={100}
                 />
+                <div className="mb-8 text-center animate-fade-in">
+				<h2 className="text-base text-white drop-shadow-md">
+					Servus, I'm {" "}
+				</h2>
+			</div>
                 <div className="flex items-center justify-center"> {/* Added flex container */}
-                    <h1 className="z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
+                <h1 className="mb-4 z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text drop-shadow-lg">
                         tangerine 🍊
                     </h1>
                 </div> {/* Close flex container */}
 
                 <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-                <div className="my-16 text-center animate-fade-in">
-                    <h2 className="text-base text-white">
+                <div className="my-16 text-center animate-fade-in drop-shadow-md">
+				<h2 className="text-base text-xl text-white">
 
-                        Servus, I am Tangerine! I cofounded {" "}
-
-                        <Link
-                            target="_blank"
-                            href="https://22dconsulting.com"
-                            className="underline duration-500 hover:text-zinc-500"
-                        >
-                            22d consulting
-                        </Link>
-
-                        {" "}<wbr />and I am investing through {" "}
-
-                        <Link
-                            target="_blank"
-                            href="https://dahoam.ventures"
-                            className="underline duration-500 hover:text-zinc-500"
-                        >
-                            dahoam ventures
-                        </Link>
-
-                        {" "}at night. See all my{" "}
+                Paragliding Athlete, Skier, and Human. {" "}{" "} Mastering Risk in the Air and in Business. {" "}{" "}
 
                         <Link
                             target=""
-                            href="/projects"
+                            href="/projects/" /* TODO add link to project page*/
                             className="underline duration-500 hover:text-zinc-500"
                         >
-                            Projects
+                            Learn more
                         </Link>
 
                         . <br /><br />Follow my paragliding adventures on{" "}
 
                         <Link
                             target="_blank"
-                            href="https://youtube.com/@daallgeier"
+                            href="https://tange.erine.ch/en/youtube"
                             className="underline duration-500 hover:text-zinc-500"
                         >
                             YouTube
                         </Link>
 
-                        {" "} and see all my other socials on the{" "}
+                        {" "} or via my other socials on the{" "}
                         <Link
                             target=""
                             href="/contact"
                             className="underline duration-500 hover:text-zinc-500"
                         >
-                            Contact
+                            links
                         </Link>
 
                         {" "} page.
