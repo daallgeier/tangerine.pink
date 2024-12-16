@@ -94,7 +94,7 @@ export default function Home() {
 
                         <Link
                             target="_blank"
-                            href="https://tange.erine.ch/en/youtube"
+                            href="https://tang.erine.ch/en/youtube"
                             className="underline duration-500 hover:text-zinc-500"
                         >
                             YouTube
