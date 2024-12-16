@@ -11,7 +11,7 @@ export default function BlogLayout({
 }
 
 export const metadata: Metadata = {
-	metadataBase: new URL("https://tangerine-pink-2duszalqy-daallgeiers-projects.vercel.app"), 
+	metadataBase: new URL("https://tangerine.pink/blog"), 
 	title: "Blog - Tangerine", 
 	description: "Welcome to my Blogs and Articles.", 
 	openGraph: {

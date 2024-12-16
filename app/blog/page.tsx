@@ -59,7 +59,7 @@ export default async function BlogPage() {
 						Blog
 					</h2>
 					<p className="mt-4 text-white">
-						Welcome to my Blogs and Articles.  I am sharing my thoughts and experiences on topics like Organisational Security and Privacy as well as updates from my Sports and Adventures.
+						Welcome to my Blogs and Articles.  I am sharing my thoughts and experiences on topics like organizational Security and Privacy as well as updates from my Sports and Adventures.
 					</p>
 				</div>
 				<div className="w-full h-px bg-zinc-800" />
