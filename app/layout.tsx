@@ -9,11 +9,11 @@ export const metadata: Metadata = {
 		default: "tangerine.pink",
 		template: "%s | tangerine.pink",
 	},
-	description: "co-founder of 22d consulting and dahoam ventures",
+	description: "Paragliding Athlete, Skier, and Human. Mastering Risk in the Air and in Business.",
 	openGraph: {
 		title: "tangerine.pink",
 		description:
-			"co-founder of 22d consulting and dahoam ventures",
+			"Paragliding Athlete, Skier, and Human. Mastering Risk in the Air and in Business.",
 		url: "https://tangerine.pink",
 		siteName: "tangerine.pink",
 		images: [

@@ -12,31 +12,31 @@ import Image from "next/image";
 const socials = [
 	{
 		icon: <FaYoutube size={20} />,
-		href: "https://youtube.com/@actual_tangerine",
+		href: "https://tang.erine.ch/en/youtube",
 		label: "YouTube",
 		handle: "@actual_tangerine",
 	},
 	{
 		icon: <BiLogoInstagramAlt size={20} />,
-		href: "https://instagram.com/actual_tangerine",
+		href: "https://tang.erine.ch/en/instagram",
 		label: "Instagram",
 		handle: "@actual_tangerine",
 	},
 	{
 		icon: <FaTiktok size={20} />,
-		href: "https://tiktok.com/@tagerinekugel",
+		href: "https://tang.erine.ch/en/tiktok",
 		label: "TikTok",
-		handle: "@tangerinekugel",
+		handle: "@actual_tangerine",
 	},
 	{
 		icon: <FaTwitter size={20} />,
-		href: "https://twitter.com/reallytangerine",
+		href: "https://tang.erine.ch/en/twitter",
 		label: "Twitter",
 		handle: "@reallytangerine",
 	},
 	{
 		icon: <FaLinkedin size={20} />,
-		href: "https://linkedin.com/in/dominikkugelmann",
+		href: "https://tang.erine.ch/en/linkedin",
 		label: "LinkedIn",
 		handle: "Tangerine",
 	},
@@ -48,13 +48,13 @@ const socials = [
 	},
 	{
 		icon: <FaCalendarPlus size={20} />,
-		href: "https://cal.com/tangerine",
+		href: "https://cal.link/tangerine",
 		label: "cal.com",
 		handle: "tangerine",
 	},
 	{
 		icon: <FaGithub size={20} />,
-		href: "https://github.com/daallgeier",
+		href: "https://tang.erine.ch/en/thehub",
 		label: "Github",
 		handle: "daallgeier",
 	},
