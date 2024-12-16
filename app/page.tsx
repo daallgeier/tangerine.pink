@@ -5,10 +5,10 @@ import React, { useState, useEffect } from "react";
 import Particles from "./components/particles";
 
 const navigation = [
-    { name: "Projects", href: "/projects" },
-    { name: "Blog", href: "/blog" },
-    { name: "Contact", href: "/contact" },
-    { name: "About", href: "/about" },
+    { name: "PROJECTS", href: "/projects" },
+    { name: "BLOG", href: "/blog" },
+    { name: "LINKS", href: "/contact" },
+    { name: "ABOUT", href: "/about" },
 ];
 
 const images = [
